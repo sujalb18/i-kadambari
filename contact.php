@@ -19,26 +19,26 @@ include 'includes/header_menu.php';
 include 'includes/check-if-added.php';
 ?>
     <div>
-        <div className=' contactcs'>
-            <h1 className='chead'>Contact Us</h1>
-            <p className='chead'>In case you have any query, please do fill up the below form and we will get in touch
+        <div class=' contactcs'>
+            <h1 class='chead'>Contact Us</h1>
+            <p class='chead'>In case you have any query, please do fill up the below form and we will get in touch
                 with
                 you as soon as possible. </p>
 
-            <ul className='chead'>
+            <ul class='chead'>
                 <li>TEL. +91 294 2454655, +91 7737627774</li>
                 <li>EMAIL. ikadambari@life.ORG</li>
                 <li>ADDRESS. Kanakia Rd, Kanakia Park, Mira Road, Mira Bhayandar, Maharashtra 401107</li>
             </ul>
-            <form className='cf'>
-                <div className='half left cf'>
-                    <input className='cinput' type='text' placeholder='Name' name='user_name' />
-                    <input className='cinput' type='email' placeholder='Email address' name='user_email' />
+            <form class='cf'>
+                <div class='half left cf'>
+                    <input class='cinput' type='text' placeholder='Name' name='user_name' />
+                    <input class='cinput' type='email' placeholder='Email address' name='user_email' />
                 </div>
-                <div className='half right cf'>
-                    <textarea className='ctextarea' name='message' type='text' placeholder='Message'></textarea>
+                <div class='half right cf'>
+                    <textarea class='ctextarea' name='message' type='text' placeholder='Message'></textarea>
                 </div>
-                <input className='cinput' type='submit' value='Submit' id='input-submit' />
+                <input class='cinput' type='submit' value='Submit' id='input-submit' />
             </form>
         </div>
     </div>
