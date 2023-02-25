@@ -40,6 +40,26 @@ session_start();
                 </div>
             </div>
         </div>
+
+        <div class='w-75 m-auto afterservices d-flex'>
+            <div class="container servicess my-5 d-flex justify-content-center">
+                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                    <h1 class='my-3'>Sreekala Satheesh Kumar</h1>
+                    <ul>
+                        <li>Experience - 10-12 years</li>
+                        <li>Subjects - English Hindi</li>
+                        <li>Charges - As per SSC, CBSE, ICSE</li>
+                    </ul>
+                    <div class='w-100'>
+                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    </div>
+                </div>
+                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                    <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
+                    <img src="./images/Tutorphoto.jpg" style="width: 15vw" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <?php include 'includes/footer.php' ?>

@@ -11,7 +11,7 @@ session_start();
     <title>ikadambari</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -117,7 +117,7 @@ session_start();
                     <div>
                         <a href='performingarts.php' class='aref'>
                             <div>
-                                <img src='https://images.pexels.com/photos/8752654/pexels-photo-8752654.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                <img src='https://images.pexels.com/photos/14106731/pexels-photo-14106731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                     class='servimages' width='300px' height='200px' />
                             </div>
                             <div class='my-3'>
@@ -141,7 +141,7 @@ session_start();
                 </div>
                 <div>
                     <div>
-                        <a href='/investad' class='aref'>
+                        <a href='investmentadvisor.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                     class='servimages' width='300px' height='200px' />
@@ -154,7 +154,7 @@ session_start();
                 </div>
                 <div>
                     <div>
-                        <a href='/dentalclinic' class='aref'>
+                        <a href='healthservices.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/5215006/pexels-photo-5215006.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                     class='servimages' width='300px' height='200px' />
