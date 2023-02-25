@@ -122,7 +122,7 @@ session_start();
                     </div>
                     <div>
                         <div>
-                            <a href='/tutor' class='aref'>
+                            <a href='tutor.php' class='aref'>
                                 <div>
                                     <img src='https://images.pexels.com/photos/5905960/pexels-photo-5905960.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1' class='servimages' width='300px' height='200px' />
                                 </div>
@@ -160,14 +160,11 @@ session_start();
             </div>
 
         <div class='container-fluid' id='beautyLink'>
-            <!-- <div class='BeautyServices'>
-                    <h4 class='display-4 fontsizeserv'>About Beauty Services</h4>
-                </div>  -->
-
+            
                 <div class='d-flex justify-content-sm-around my-3'>
                     <div>
                         <div>
-                            <a href='/servicesdesc' class='aref'>
+                            <a href='makeup.php' class='aref'>
                                 <div>
                                     <img src='https://images.pexels.com/photos/3089849/pexels-photo-3089849.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1' class='servimages' width='300px' height='200px' />
                                 </div>
@@ -179,7 +176,7 @@ session_start();
                     </div>
                     <div>
                         <div>
-                            <a href='/makeup2' class='aref'>
+                            <a href='yoga.php' class='aref'>
                                 <div>
                                     <img src='https://images.pexels.com/photos/3984337/pexels-photo-3984337.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1' class='servimages' width='300px' height='200px' />
                                 </div>
