@@ -10,7 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ikadambari</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -24,77 +24,89 @@ session_start();
                         <h1>Our Services</h1>
                     </div>
                     <div>
-                        <p class='ourservp display-4'>Women are more fit for social service than men. They are the incarnation of Ahimsa, the very picture of love. They can charge the society by filling the milk of human kindness in their children. The lap of mother is the first and the best school of every human being. Women is the maker of man. Let her make man real human being. A lady teacher does more than a male teacher. The nurses and lady doctors are doing service to the suffering humanity.</p>
+                        <p class='ourservp'>Women are more fit for social service than men. They are the incarnation of Ahimsa, the very picture of love. They can charge the society by filling the milk of human kindness in their children. The lap of mother is the first and the best school of every human being. Women is the maker of man. Let her make man real human being. A lady teacher does more than a male teacher. The nurses and lady doctors are doing service to the suffering humanity.</p>
                     </div>
                 </div>
             </div>
 
-            <div class='d-grid servicecontainer m-auto'>
+        <div class='d-grid servicecontainer m-auto'>
 
-                    <div class='grid-items'>
-                        <div class='my-2'>
-                            <img src='images/beautyicon.png' alt="BGIMG" width='30px' height='40px' />
-                        </div>
-
-                        <div>
-                            <b><p style=  "fontSize: 0.9rem" >Beauty Parlour for Women</p></b>
-                        </div>
-                    </div>
-
-                    <div class='grid-items '>
-                        <div class='my-2'>
-                            <img src='images/yogaicon.png' width='30px' height='40px' />
-                        </div>
-                        <div>
-                            <b><a href='#' class='aref'><p style= " fontSize: 0.9rem" >Yoga Teacher</p></a></b>
-                        </div>
-                    </div>
-
-
-                    <div class='grid-items'>
-                        <div class='my-2'>
-                            <img src='images/danceicon.png' width='30px' height='40px' />
-                        </div>
-                        <div>
-                            <b><p style= "fontSize: 0.9rem" >Dance Classes</p></b>
-                        </div>
-                    </div>
-                <div class='grid-items'>
-                    <div class='my-2'>
-                        <img src='images/concerticon.png' width='30px' height='40px' />
-                    </div>
-                    <div>
-                        <b><a href='#' class='aref'><p style="fontSize: 0.9rem" >Singing Classes</p></a></b>
-                    </div>
+            <div class='grid-items'>
+                <div class='my-2'>
+                    <img src='images/beautyicon.png' alt="BGIMG" width='30px' height='40px' />
                 </div>
 
-                <div class='grid-items'>
-                    <div class='my-2'>
-                        <img src='images/fooddonationicon.png' width='30px' height='40px' />
-                    </div>
-                    <div>
-                        <b><a href='#' class='aref'><p style= " fontSize: 0.9rem" >Food Services</p></a></b>
-                    </div>
+                <div>
+                    <b>
+                        <p style="fontSize: 0.9rem">Beauty Parlour for Women</p>
+                    </b>
                 </div>
-
-                <div class='grid-items'>
-                    <div class='my-2'>
-                        <img src='images/educationstudyicon.png' width='30px' height='40px' />
-                    </div>
-                    <div>
-                        <b><a href='#' class='aref'><p style= " fontSize: 0.9rem" >Home Tuitions</p></a></b>
-                    </div>
-                </div>
-                
-                
             </div>
-            <hr />
-            <div class='container-fluid' id='danceLink'>
-                <div class='DanceServices'>
-                    <h4 class='display-4 fontsizeserv'>Our Services</h4>
-                </div>
 
-                <div class='d-flex responsiveserv justify-content-sm-around my-3'>
+            <div class='grid-items '>
+                <div class='my-2'>
+                    <img src='images/yogaicon.png' width='30px' height='40px' />
+                </div>
+                <div>
+                    <b><a href='#' class='aref'>
+                            <p style=" fontSize: 0.9rem">Yoga Teacher</p>
+                        </a></b>
+                </div>
+            </div>
+
+
+            <div class='grid-items'>
+                <div class='my-2'>
+                    <img src='images/danceicon.png' width='30px' height='40px' />
+                </div>
+                <div>
+                    <b>
+                        <p style="fontSize: 0.9rem">Dance Classes</p>
+                    </b>
+                </div>
+            </div>
+            <div class='grid-items'>
+                <div class='my-2'>
+                    <img src='images/concerticon.png' width='30px' height='40px' />
+                </div>
+                <div>
+                    <b><a href='#' class='aref'>
+                            <p style="fontSize: 0.9rem">Singing Classes</p>
+                        </a></b>
+                </div>
+            </div>
+
+            <div class='grid-items'>
+                <div class='my-2'>
+                    <img src='images/fooddonationicon.png' width='30px' height='40px' />
+                </div>
+                <div>
+                    <b><a href='#' class='aref'>
+                            <p style=" fontSize: 0.9rem">Food Services</p>
+                        </a></b>
+                </div>
+            </div>
+
+            <div class='grid-items'>
+                <div class='my-2'>
+                    <img src='images/educationstudyicon.png' width='30px' height='40px' />
+                </div>
+                <div>
+                    <b><a href='#' class='aref'>
+                            <p style=" fontSize: 0.9rem">Home Tuitions</p>
+                        </a></b>
+                </div>
+            </div>
+
+
+        </div>
+        <hr />
+        <div class='container-fluid' id='danceLink'>
+            <div class='DanceServices'>
+                <h4 class='display-4 fontsizeserv'>Our Services</h4>
+            </div>
+
+                <div class='d-flex justify-content-sm-around my-3'>
                     <div>
                         <div>
                             <a href='performingarts.php' class='aref'>
@@ -147,12 +159,12 @@ session_start();
                 </div>
             </div>
 
-            <div class='container-fluid' id='beautyLink'>
-                 <!-- <div class='BeautyServices'>
+        <div class='container-fluid' id='beautyLink'>
+            <!-- <div class='BeautyServices'>
                     <h4 class='display-4 fontsizeserv'>About Beauty Services</h4>
                 </div>  -->
 
-                <div class='d-flex responsiveserv justify-content-sm-around my-3'>
+                <div class='d-flex justify-content-sm-around my-3'>
                     <div>
                         <div>
                             <a href='/servicesdesc' class='aref'>
@@ -216,18 +228,18 @@ session_start();
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>
 <script>
-    $(document).ready(function () 
-        $('[data-toggle="popover"]').popover();
-    );
-    $(document).ready(function () 
+$(document).ready(function() $('[data-toggle="popover"]').popover(););
+$(document).ready(function()
 
-        if (window.location.href.indexOf('#login') != -1) 
-            $('#login').modal('show');
-        
+    if (window.location.href.indexOf('#login') != -1)
+        $('#login').modal('show');
 
-    );
+
+);
 </script>
 
 

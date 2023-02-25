@@ -18,23 +18,52 @@ session_start();
     <?php
   include 'includes/header_menu.php';
   ?>
+    <style>
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+    </style>
 
     <div>
         <div class='w-75 m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
                 <div class='w-50 my-5 mx-4 servicesdescpara'>
-                    <h1 class='my-3'>Expressions By Vaidehi</h1>
+                    <h1 class='my-3'>Musical Yoga and Fitness Academy</h1>
                     <ul>
                         <li>Experience - 9 years</li>
-                        <li>Location - Bhayender (East)</li>
-                        <li>Charges - Bridel make-up starting Rs. 5000 and simple make-up staring Rs. 1000</li>
+                        <li>Location - Mira-Bhayender</li>
+                        <li>Charges - Standard Charges</li>
                     </ul>
                     <div class='w-100'>
                         <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
                     </div>
                 </div>
                 <div class='my-4 w-25 m-0 d-flex justify-content-center'>
-                    <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video>
+                    <div class="mySlides fade">
+                        <img src="./images/yoga (1).jpeg" style="width:30vw">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/yoga (2).jpeg" style="width:30vw">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/yoga (3).jpeg" style="width:30vw">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/yoga (4).jpeg" style="width:30vw">
+                    </div>
+                    <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
                 </div>
             </div>
         </div>
@@ -55,7 +84,24 @@ $(document).ready(function()
         $('#login').modal('show');
 );
 </script>
+<script>
+let slideIndex = 0;
+showSlides();
 
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 
 </html>
 

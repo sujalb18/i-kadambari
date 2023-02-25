@@ -61,6 +61,10 @@
         </div>
     </div>
     <div class="text-center p-3">
+        Conceputualized By <br>
+        <i class="text-center">Krishna Tiwari</i>
+    </div>
+    <div class="text-center p-3">
         © 2023 iKadambari
     </div>
 </footer>
