@@ -10,7 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ikadambari</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -24,7 +24,7 @@ session_start();
                         <h1>Our Services</h1>
                     </div>
                     <div>
-                        <p class='ourservp'>Women are more fit for social service than men. They are the incarnation of Ahimsa, the very picture of love. They can charge the society by filling the milk of human kindness in their children. The lap of mother is the first and the best school of every human being. Women is the maker of man. Let her make man real human being. A lady teacher does more than a male teacher. The nurses and lady doctors are doing service to the suffering humanity.</p>
+                        <p class='ourservp display-4'>Women are more fit for social service than men. They are the incarnation of Ahimsa, the very picture of love. They can charge the society by filling the milk of human kindness in their children. The lap of mother is the first and the best school of every human being. Women is the maker of man. Let her make man real human being. A lady teacher does more than a male teacher. The nurses and lady doctors are doing service to the suffering humanity.</p>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@ session_start();
                     <h4 class='display-4 fontsizeserv'>Our Services</h4>
                 </div>
 
-                <div class='d-flex justify-content-sm-around my-3'>
+                <div class='d-flex responsiveserv justify-content-sm-around my-3'>
                     <div>
                         <div>
                             <a href='performingarts.php' class='aref'>
@@ -152,7 +152,7 @@ session_start();
                     <h4 class='display-4 fontsizeserv'>About Beauty Services</h4>
                 </div>  -->
 
-                <div class='d-flex justify-content-sm-around my-3'>
+                <div class='d-flex responsiveserv justify-content-sm-around my-3'>
                     <div>
                         <div>
                             <a href='/servicesdesc' class='aref'>

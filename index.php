@@ -46,7 +46,7 @@ session_start();
                 <div class="col-lg-6 aboutdesc">
                     <div class="mx-1">
                         <h1 class="display-4">About iKadambari</h1>
-                        <p class="lead">Women' s skills in handicrafts and service sectors are an important part of
+                        <p class="lead" style="text-align:justify">Women' s skills in handicrafts and service sectors are an important part of
                             India's culture and economy. From traditional weaving and embroidery to modern technology
                             and
                             business management, women have been at the forefront of these industries for generations.
