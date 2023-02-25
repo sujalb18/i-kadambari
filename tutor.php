@@ -23,37 +23,36 @@ session_start();
         <div class='w-75 m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
                 <div class='w-50 my-5 mx-4 servicesdescpara'>
-                    <h1 class='my-3'>Expressions By Vaidehi</h1>
+                    <h1 class='my-3'>Online Academic classes </h1>
                     <ul>
-                        <li>Experience - 9 years</li>
-                        <li>Location - Bhayender (East)</li>
-                        <li>Charges - Bridel make-up starting Rs. 5000 and simple make-up staring Rs. 1000</li>
+                        <li>About- Science math, English classes for CBSE,ICSE,and IGCSE boards from std 7 to 10</li>
+                        <li>Experience - 20+ years</li>
+                        <li>Location - Across india, UK, Qatar</li>
+                        <li>Charges - depends upon standard and subjects </li>
                     </ul>
                     <div class='w-100'>
                         <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
                     </div>
                 </div>
                 <div class='my-4 w-25 m-0 d-flex justify-content-center'>
-                    <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video>
+                    <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
+                    <img src="./images/tutor.jfif" style="width: 15vw" alt="">
                 </div>
             </div>
         </div>
     </div>
 </body>
 <?php include 'includes/footer.php' ?>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
 </script>
 <script>
-$(document).ready(function() $('[data-toggle="popover"]').popover(););
-$(document).ready(function()
-
-    if (window.location.href.indexOf('#login') != -1)
-        $('#login').modal('show');
-);
+$(document).ready(function() $(' [data-toggle="popover" ]').popover(););
+$(document).ready(function() if (window.location.href.indexOf('#login') != -1) $('#login').modal(
+    'show'););
 </script>
 
 
