@@ -1,5 +1,4 @@
 <?php
-//This code checks if the product is added to cart. 
 function check_if_added_to_cart($item_id) {
     
     $user_id = $_SESSION['user_id']; 

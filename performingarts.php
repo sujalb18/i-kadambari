@@ -23,7 +23,7 @@ session_start();
         <div class='w-75 m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
                 <div class='w-50 my-5 mx-4 servicesdescpara'>
-                    <h1 class='my-3'>Expressions By Vaidehi</h1>
+                    <h3 class='my-3'>Expressions By Vaidehi</h3>
                     <ul>
                         <li>Experience - 9 years</li>
                         <li>Location - Bhayender (East)</li>
@@ -35,6 +35,24 @@ session_start();
                 </div>
                 <div class='my-4 w-25 m-0 d-flex justify-content-center'>
                     <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video>
+                </div>
+            </div>
+        </div>
+        <div class='w-75 m-auto afterservices d-flex'>
+            <div class="container servicess my-5 d-flex justify-content-center">
+                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                    <h3 class='my-3'>Singing classes and event programs Profession classical music and light music classes.</h3>
+                    <ul>
+                        <li>Experience - 8 years</li>
+                        <li>Location - Dombivali</li>
+                        <li>Charges - Rs. 400/- Per Session</li>
+                    </ul>
+                    <div class='w-100'>
+                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    </div>
+                </div>
+                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                    <img src="./images/Singer (2).jpeg" style="width:12vw" alt="">
                 </div>
             </div>
         </div>

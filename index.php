@@ -58,7 +58,7 @@ session_start();
                             women's skills in these sectors can lead to greater economic and social opportunities for
                             women,
                             while also preserving and celebrating India's diverse cultural traditions.</p>
-                        <a href="#" class="btn btn-outline-dark">Read More</a>
+                        <!-- <a href="#" class="btn btn-outline-dark">Read More</a> -->
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
     background-color: #80202b;
 }
 
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
     display: block;
 }
 
@@ -16,7 +16,7 @@
 .dropdown-item:hover {
     background-color: #e9ecef;
     color: #343a40;
-}
+} */
 </style>
 
 <nav class="navbar navbar-expand-lg d-flex navbar-dark navcolor">
@@ -27,7 +27,6 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <img src={IkLogo} className='navbar-brand m-2' width={'200px'}></img> -->
             <a class="navbar-brand" href="#">iKadambari |</a>
         </div>
 
@@ -44,20 +43,13 @@
                 <li class="nav-item active">
                     <a class="nav-link " aria-current="page" href="index.php">Home</a>
                 </li>
-                <!-- <li class="nav-item mx-1">
-                    <a class="nav-link " href="/login">Login</a>
-                    <ul class="dropdown-menu mx-1 hover-effect">
-                        <li><a class="dropdown-item  dropdown-content" href="#">Signup</a></li>
-                        <li><a class="dropdown-item  dropdown-content" href="#">Login</a></li>
-                    </ul>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="services.php">Services</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="products.php" role="button" aria-expanded="false">Product
+                <li class="nav-item">
+                    <a class="nav-link" href="products.php" role="button" aria-expanded="false">Product
                     </a>
-                    <ul class="dropdown-menu hover-effect">
+                    <!-- <ul class="dropdown-menu hover-effect">
                         <li><a class="dropdown-item dropdown-content" href="#"><b><i>Categories</i></b></a></li>
 
                         <li>
@@ -71,11 +63,10 @@
                             <hr class="dropdown-divider" />
                         </li>
                         <li><a class="dropdown-item dropdown-content" href="#"><b><i>Materials</i></b></a></li>
-
                         <li>
                             <hr class="dropdown-divider" />
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>

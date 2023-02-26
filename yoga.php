@@ -40,7 +40,7 @@ session_start();
         <div class='w-75 m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
                 <div class='w-50 my-5 mx-4 servicesdescpara'>
-                    <h1 class='my-3'>Musical Yoga and Fitness Academy</h1>
+                    <h3 class='my-3'>Musical Yoga and Fitness Academy</h3>
                     <ul>
                         <li>Experience - 9 years</li>
                         <li>Location - Mira-Bhayender</li>
@@ -52,16 +52,16 @@ session_start();
                 </div>
                 <div class='my-4 w-25 m-0 d-flex justify-content-center'>
                     <div class="mySlides fade">
-                        <img src="./images/yoga (1).jpeg" style="width:30vw">
+                        <img src="./images/yoga (1).jpeg" style="width:30vw; height:30vh">
                     </div>
                     <div class="mySlides fade">
-                        <img src="./images/yoga (2).jpeg" style="width:30vw">
+                        <img src="./images/yoga (2).jpeg" style="width:30vw; height:30vh">
                     </div>
                     <div class="mySlides fade">
-                        <img src="./images/yoga (3).jpeg" style="width:30vw">
+                        <img src="./images/yoga (3).jpeg" style="width:30vw; height:30vh">
                     </div>
                     <div class="mySlides fade">
-                        <img src="./images/yoga (4).jpeg" style="width:30vw">
+                        <img src="./images/yoga (4).jpeg" style="width:30vw; height:30vh">
                     </div>
                     <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
                 </div>

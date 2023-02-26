@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,10 @@
   }
   .navcolor {
     background-color: #80202b;
+  }
+
+  .shantellfont{
+    font-family: 'Shantell Sans', cursive;
   }
   
   .footcolor {
