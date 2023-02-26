@@ -1,7 +1,14 @@
-<!-- <div class='footcolor'> -->
 <style>
 .footcolor {
     background-color: #80202b;
+}
+.footerp{
+    text-align: justify;
+}
+.footera{
+    color: white;
+    text-decoration: none;
+
 }
 </style>
 
@@ -12,7 +19,7 @@
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Our Mission</h5>
 
-                <p>
+                <p class="footerp">
                     "Our mission is to empower women in India by providing a platform that connects them to
                     opportunities for personal and professional growth. Through our services, women from rural,
                     semi-rural, and urban regions can showcase their skills and sell their products, providing them with
@@ -21,7 +28,6 @@
                     across India."
                 </p>
             </div>
-            <!-- {/* <img class="col-lg-6 col-md-12 mb-4 mb-md-0" src={footimg}></img> */} -->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase">About</h5>
 
@@ -62,10 +68,11 @@
     </div>
     <div class="text-center p-3">
         Conceputualized By <br>
+        <a href="https://www.linkedin.com/in/utsav-tiwari-17846714a/" target="_blank" class="footera">
         <i class="text-center">Krishna Tiwari</i>
+        </a>
     </div>
     <div class="text-center p-3">
         © 2023 iKadambari
     </div>
 </footer>
-<!-- </div> -->
