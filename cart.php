@@ -19,54 +19,76 @@ if (!isset($_SESSION['email'])) {
 
 <body style='height = 100vh'>
     <?php
-include 'includes/header_menu.php';
-?>
+    include 'includes/header_menu.php';
+    ?>
     <div class="d-flex justify-content-center">
         <div class=" col-md-6  my-5 table-responsive p-5">
             <table class="table table-striped table-bordered table-hover ">
                 <?php
-$sum = 0;
-$user_id = $_SESSION['user_id'];
-$query = " SELECT products.price AS Price, products.id, products.name AS Name FROM users_products JOIN products ON users_products.item_id = products.id WHERE users_products.user_id='$user_id' and status='Added To Cart'";
-$result = mysqli_query($con, $query);
-if (mysqli_num_rows($result) >= 1) {
-    ?>
-                <thead>
-                    <tr>
-                        <th>Item Number</th>
-                        <th>Item Name</th>
-                        <th>Price</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tbody>
-                    <?php
-while ($row = mysqli_fetch_array($result)) {
-        $sum += $row["Price"];
-        $id = $row["id"] . ", ";
-        echo "<tr><td>" . "#" . $row["id"] . "</td><td>" . $row["Name"] . "</td><td>Rs " . $row["Price"] . "</td><td><a href='cart-remove.php?id={$row['id']}' class='remove_item_link'> Remove</a></td></tr>";
-    }
-    $id = rtrim($id, ", ");
-    echo "<tr><td></td><td>Total</td><td>Rs " . $sum . "</td><td><a href='success.php' class='btn btn-primary'>Confirm Order</a></td></tr>";
-    ?>
-                </tbody>
-                <?php
-} else {
-    echo "<div> <img src='images/emptycart.png' class='image-fluid' height='150' width='150'></div><br/>";
-    echo "<div class='text-bold  h5'>Add items to the cart first!<div>";
+                $price = 0;
+                $user_id = $_SESSION['user_id'];
+                   
+                $query = " SELECT users_products.quantity as Quantity, products.price AS Price, products.id, products.name AS Name FROM users_products JOIN products ON users_products.item_id = products.id WHERE users_products.user_id='$user_id' and status='Added To Cart'";
 
-}
-?>
+                $result = mysqli_query($con, $query);
+                if (mysqli_num_rows($result) >= 1) {
+                    ?>
+                        <?php
+                        while ($row = mysqli_fetch_array($result)) {
+
+                            $price += $row["Price"];
+                            $name = $row["Name"];
+                            $quantity = $row["Quantity"];  
+                            $sum = 1;
+
+                            
+                            echo "<div class='items-body'>
+
+                            <div class='row cart-item'>
+                                <div class='col-md-3'>
+                                    <img class='img-fluid' src='./images/shoe1.jpg' />
+                                </div>
+                                <div class='col-md-3 col-sm-3 col-xs-3 col-3' style='padding:2%'>
+                                    <h5 class='text-style-1'>$name</h5>
+                                    <p class='text-style-2'>Rs.$price</p>
+                                    <div class='wrapper'>
+                                    <button class='btn btn-danger' type='button'>-</button>";
+                                    echo "<span class='num' id='quantities'>$quantity</span>
+                                    <button class='btn btn-danger' onclick='plus($quantity)' type='button'>+</button>
+                                 </div>
+                    
+                                </div>
+            
+                                <div class='col-md-2 col-sm-3 col-xs-3 col-3' style='padding:2%'>
+                                    <h5 class='text-style-2'>Total</h5>
+                                    <p class='text-style-4'>Rs 3000</p>
+                                </div>
+                            </div>
+                            <div class='container py-4'>
+                                <div><button class='btn btn-danger custom-btn' type='button'>Buy Product</button></div>
+                            </div>
+                        </div>";
+                        }
+                        ?>
+                    </tbody>
                 <?php
-?>
+                } else {
+                    echo "<div> <img src='images/emptycart.png' class='image-fluid' height='150' width='150'></div><br/>";
+                    echo "<div class='text-bold  h5'>Add items to the cart first!<div>";
+                }
+                ?>
+                <?php
+                ?>
                 </tbody>
             </table>
         </div>
+
     </div>
+
+    
     </div>
     <!--footer -->
-    <?php include 'includes/footer.php'?>
+    <?php include 'includes/footer.php' ?>
     <!--footer end-->
 
 </body>
@@ -74,28 +96,45 @@ while ($row = mysqli_fetch_array($result)) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function() {
-    $(' [data-toggle="popover" ]').popover();
-});
-$(document).ready(function() {
-    if (window.location.href.indexOf('#login') != -1) {
-        $('#login').modal('show');
-    }
-});
+    $(document).ready(function () {
+        $(' [data-toggle="popover" ]').popover();
+    });
+    $(document).ready(function () {
+        if (window.location.href.indexOf('#login') != -1) {
+            $('#login').modal('show');
+        }
+    });
 </script>
-<?php if (isset($_GET['error'])) {$z = $_GET['error'];
+<?php if (isset($_GET['error'])) {
+    $z = $_GET['error'];
     echo "<script type='text/javascript'>
 $(document).ready(function(){
 $('#signup').modal('show');
 });
 </script>";
-    echo "<script type='text/javascript'>alert('" . $z . "')</script>";}?>
-<?php if (isset($_GET['errorl'])) {$z = $_GET['errorl'];
+    echo "<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
+<?php if (isset($_GET['errorl'])) {
+    $z = $_GET['errorl'];
     echo "<script type='text/javascript'>
 $(document).ready(function(){
 $('#login').modal('show');
 });
 </script>";
-    echo "<script type='text/javascript'>alert('" . $z . "')</script>";}?>
+    echo "<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
+<!-- <script>
+    function plus(quantity) {
+        <?php
+        
+        
+        if (mysqli_num_rows($result1) >= 1){
+            
+        }
 
+        ?>
+        document.getElementById('quantities').innerHTML = quantity;
+        console.log(quantity);
+    }
+</script> -->
 </html>

@@ -27,8 +27,7 @@ session_start();
         </div>
 
         <div>
-            <p>iKadambari empowers women entrepreneurs by showcasing their unique products and services, made by women
-                for India.</p>
+            <p>iKadambari empowers women entrepreneurs by showcasing their unique products and services, made by women for India.</p>
         </div>
 
         <div>
@@ -58,7 +57,6 @@ session_start();
                             women's skills in these sectors can lead to greater economic and social opportunities for
                             women,
                             while also preserving and celebrating India's diverse cultural traditions.</p>
-                        <!-- <a href="#" class="btn btn-outline-dark">Read More</a> -->
                     </div>
                 </div>
             </div>

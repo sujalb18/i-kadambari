@@ -68,7 +68,7 @@
     </div>
     <div class="text-center p-3">
         Conceputualized By <br>
-        <a href="https://www.linkedin.com/in/utsav-tiwari-17846714a/" target="_blank" class="footera">
+        <a href="https://www.linkedin.com/in/krishna-tiwari-2723671b2/" target="_blank" class="footera">
         <i class="text-center">Krishna Tiwari</i>
         </a>
     </div>

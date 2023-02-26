@@ -202,7 +202,7 @@ session_start();
                 </div>
                 <div>
                     <div>
-                        <a href='/servicesdesc' class='aref'>
+                        <a href='nursingandcaretaking.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/6436284/pexels-photo-6436284.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                     class='servimages' width='300px' height='200px' />
@@ -215,7 +215,7 @@ session_start();
                 </div>
                 <div>
                     <div>
-                        <a href='/cake' class='aref'>
+                        <a href='cakesandbakery.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/7525168/pexels-photo-7525168.jpeg'
                                     class='servimages' width='300px' height='200px' />
@@ -244,16 +244,25 @@ session_start();
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
 </script>
-<script>
-$(document).ready(function() $('[data-toggle="popover"]').popover(););
-$(document).ready(function()
+<?php if (isset($_GET['error'])) {
+    $z = $_GET['error'];
+    echo "<script type='text/javascript'>
+$(document).ready(function(){
+$('#signup').modal('show');
+});
+</script>";
+    echo "<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
 
-    if (window.location.href.indexOf('#login') != -1)
-        $('#login').modal('show');
-
-
-);
-</script>
+<?php if (isset($_GET['errorl'])) {
+    $z = $_GET['errorl'];
+    echo "<script type='text/javascript'>
+$(document).ready(function(){
+$('#login').modal('show');
+});
+</script>";
+    echo "<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
 
 
 </html>
