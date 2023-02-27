@@ -8,11 +8,18 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ikadambari</title>
+    <title>i-kadambari</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
-
+<style>
+     body{
+    background-color: rgb(240, 240, 240) ;
+    }
+    .fontsizeserv{
+    background-color: rgb(240, 240, 240) ;
+    }
+</style>
 <body>
     <?php
     include 'includes/header_menu.php';
@@ -32,7 +39,7 @@ session_start();
             </div>
         </div>
 
-        <div class='d-grid servicecontainer m-auto w-50'>
+        <div class='d-grid servicecontainer m-auto'>
 
             <div class='grid-items'>
                 <div class='my-2'>
@@ -41,7 +48,7 @@ session_start();
 
                 <div>
                     <b>
-                        <p style="fontSize: 0.9rem">Beauty Parlour for Women</p>
+                        <p style="fontSize: 0.9rem" class="lowfontsize">Beauty Parlour for Women</p>
                     </b>
                 </div>
             </div>
@@ -52,7 +59,7 @@ session_start();
                 </div>
                 <div>
                     <b><a href='#' class='aref'>
-                            <p style=" fontSize: 0.9rem">Yoga Teacher</p>
+                            <p style=" fontSize: 0.9rem" class="lowfontsize">Yoga Teacher</p>
                         </a></b>
                 </div>
             </div>
@@ -64,7 +71,7 @@ session_start();
                 </div>
                 <div>
                     <b>
-                        <p style="fontSize: 0.9rem">Dance Classes</p>
+                        <p style="fontSize: 0.9rem" class="lowfontsize">Dance Classes</p>
                     </b>
                 </div>
             </div>
@@ -74,7 +81,7 @@ session_start();
                 </div>
                 <div>
                     <b><a href='#' class='aref'>
-                            <p style="fontSize: 0.9rem">Singing Classes</p>
+                            <p style="fontSize: 0.9rem" class="lowfontsize">Singing Classes</p>
                         </a></b>
                 </div>
             </div>
@@ -85,7 +92,7 @@ session_start();
                 </div>
                 <div>
                     <b><a href='#' class='aref'>
-                            <p style=" fontSize: 0.9rem">Food Services</p>
+                            <p style=" fontSize: 0.9rem" class="lowfontsize">Food Services</p>
                         </a></b>
                 </div>
             </div>
@@ -96,7 +103,29 @@ session_start();
                 </div>
                 <div>
                     <b><a href='#' class='aref'>
-                            <p style=" fontSize: 0.9rem">Home Tuitions</p>
+                            <p style=" fontSize: 0.9rem" class="lowfontsize">Home Tuitions</p>
+                        </a></b>
+                </div>
+            </div>
+
+            <div class='grid-items'>
+                <div class='my-2'>
+                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/banking-finance/financial-advisor-icon.svg' width='30px' height='40px' />
+                </div>
+                <div>
+                    <b><a href='#' class='aref'>
+                            <p style="fontSize: 0.9rem" class="lowfontsize">Business and Finance</p>
+                        </a></b>
+                </div>
+            </div>
+
+            <div class='grid-items'>
+                <div class='my-2'>
+                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/medical-science-lab/healthcare-icon.svg' width='30px' height='40px' />
+                </div>
+                <div>
+                    <b><a href='#' class='aref'>
+                            <p style=" fontSize: 0.9rem" class="lowfontsize">Health Services</p>
                         </a></b>
                 </div>
             </div>
@@ -105,7 +134,7 @@ session_start();
         </div>
         <hr />
         <div class='container-fluid' id='danceLink'>
-            <div class='DanceServices'>
+            <div class='DanceServices fontsizeserv'>
                 <h4 class='display-4 fontsizeserv'>Our Services</h4>
             </div>
 
@@ -144,7 +173,7 @@ session_start();
                                     class='servimages' width='300px' height='200px' />
                             </div>
                             <div class='my-3'>
-                                <h5 class='servtitle'>Investment Advisory</h5>
+                                <h5 class='servtitle'>Business and Finance</h5>
                             </div>
                         </a>
                     </div>

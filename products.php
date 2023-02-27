@@ -8,11 +8,15 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ikadambari</title>
+    <title>i-kadambari</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
+    .jumbotron{
+        background-color: #80202b;
+        color: white;
+    }
     .goodfont{
         font-family: 'Montserrat', sans-serif;
     }
@@ -28,7 +32,7 @@ session_start();
     <div class="container" style="margin-top:65px">
         <!--jumbutron start-->
         <div class="jumbotron text-center">
-            <h1 class="goodfont">Welcome to iKadambari Store</h1>
+            <h1 class="goodfont">Welcome to i-Kadambari Store</h1>
             <p>Our store empowers women by offering a selection of handmade products made by talented women artisans</p>
         </div>
         <!--jumbutron ends-->
@@ -48,7 +52,7 @@ session_start();
                     <img src="images/krishna diary.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Krishna's Diary</h6>
-                        <h6>Price :Rs 3000</h6>
+                        <h6>Price : Rs 300</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger text-white ">Add To Cart</a>
                             </p>
@@ -73,7 +77,7 @@ session_start();
                     <img src="images/Handpainted1.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price :Rs 2500</h6>
+                        <h6>Price : Rs 500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -97,7 +101,7 @@ session_start();
                     <img src="images/handpainted2.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price :Rs 3500</h6>
+                        <h6>Price : Rs 500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -121,7 +125,7 @@ session_start();
                     <img src="images/Handpainted3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price :Rs 1800</h6>
+                        <h6>Price : Rs 500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -147,7 +151,7 @@ session_start();
                     <img src="images/Handpainted4.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price :Rs 1800</h6>
+                        <h6>Price : Rs 500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -171,7 +175,7 @@ session_start();
                     <img src="images/Handpainted5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price :Rs 2500</h6>
+                        <h6>Price : Rs 500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -194,8 +198,8 @@ session_start();
                 <div class="card">
                     <img src="images/Handpainted6.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Highlander t-shirt</h6>
-                        <h6>Price :Rs 500</h6>
+                        <h6>Hand Painted Wall Arts</h6>
+                        <h6>Price : Rs 500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -218,8 +222,8 @@ session_start();
                 <div class="card">
                     <img src="images/art1.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>GUCCI White t-Shirt</h6>
-                        <h6>Price :Rs 2300</h6>
+                        <h6>Decorative Plates</h6>
+                        <h6>Price : Rs 250</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -244,8 +248,8 @@ session_start();
                 <div class="card">
                     <img src="images/art2.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Nike White Sneaker</h6>
-                        <h6>Price :Rs 8000</h6>
+                        <h6>Festive Decoration</h6>
+                        <h6>Price : Rs 160</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -268,8 +272,8 @@ session_start();
                 <div class="card">
                     <img src="images/art3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Nike White Shoes</h6>
-                        <h6>Price :Rs 7500</h6>
+                        <h6>Festive Arts(Modaks)</h6>
+                        <h6>Price : Rs 200(50rs per piece)</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -292,8 +296,8 @@ session_start();
                 <div class="card">
                     <img src="images/art4.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Nike Yellow Sneaker</h6>
-                        <h6>Price :Rs 7000</h6>
+                        <h6>Festive Arts(Modaks)</h6>
+                        <h6>Price : Rs 60</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -316,8 +320,8 @@ session_start();
                 <div class="card">
                     <img src="images/art5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Nike Sneaker</h6>
-                        <h6>Price :Rs 6000</h6>
+                        <h6>Decorative Art Carry Bag</h6>
+                        <h6>Price : Rs 200</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -342,8 +346,8 @@ session_start();
                 <div class="card">
                     <img src="images/art6.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Beats Headphone</h6>
-                        <h6>Price :Rs 22,500</h6>
+                        <h6>Canvas Painting</h6>
+                        <h6>Price : Rs 400</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -366,8 +370,8 @@ session_start();
                 <div class="card">
                     <img src="images/art7.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Zolo Headphone</h6>
-                        <h6>Price :Rs 4500</h6>
+                        <h6>Decorative Bottle Art</h6>
+                        <h6>Price : Rs 450</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -390,8 +394,8 @@ session_start();
                 <div class="card">
                     <img src="images/art8.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Sony Speaker</h6>
-                        <h6>Price :Rs 10,500</h6>
+                        <h6>Canvas Painting</h6>
+                        <h6>Price : Rs 400</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>
@@ -414,8 +418,8 @@ session_start();
                 <div class="card">
                     <img src="images/art9.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Airpods</h6>
-                        <h6>Price :Rs 15,000</h6>
+                        <h6>Embroided Decoration</h6>
+                        <h6>Price : Rs 250</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
                             </p>

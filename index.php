@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>i Kadambari</title>
+    <title>i-Kadambari</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -24,6 +24,15 @@ session_start();
         background: #f1f1f1f1;
     }
 
+    body{
+    background: url('./images/backgroundimagebody.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+           
+    }
     /* Slides */
     .mySlides {
         display: none;
@@ -45,6 +54,7 @@ session_start();
         font-size: 20px;
         border-radius: 0 3px 3px 0;
         user-select: none;
+        transition: 0.6s ease;
     }
 
     /* Position the "next button" to the right */
@@ -95,6 +105,9 @@ session_start();
     .author {
         color: cornflowerblue;
     }
+    .firstvideo{
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
 </style>
     <?php
     include 'includes/header_menu.php';
@@ -102,29 +115,29 @@ session_start();
     ?>
     <!--Header ends-->
     <div class='container-fluid d-flex flex-column align-items-center' style=" margin-top: 40px">
-        <div>
-            <h1>Empowering Women, Empowering India</h1>
+        <div >
+            <h1 class="hero">Empowering Women, Empowering India</h1>
         </div>
 
         <div>
-            <p>iKadambari empowers women entrepreneurs by showcasing their unique products and services, made by women for India.</p>
+            <p class="subpara">i-Kadambari empowers women entrepreneurs of India by showcasing their unique products and services .</p>
         </div>
 
         <div class="m-auto d-flex justify-content-center">
             <video class='firstvideo'
-                src='./video/startingvideo.mp4' style='width:60%;border-radius:4px' autoPlay loop muted />
+                src='./video/startingvideo.mp4' autoPlay loop muted />
         </div>
         <br></br>
         <div class=" container my-5">
-            <div class="row">
+            <div class="row" >
                 <div class="col-lg-6 d-flex justify-content-center">
-                    <img class="aboutimg shadow m-0" style='margin-top:40px;width:50vw;border-radius:4px'
+                    <img class="aboutimg shadow m-0" style='border-radius:4px' id="imghome"
                         src='https://ikadambari-life.netlify.app/static/media/we.87bd460fd7bf4de2dd62.jpeg' />
                 </div>
                 <div class="col-lg-6 aboutdesc">
-                    <div class="mx-1">
-                        <h1 class="display-4">About iKadambari</h1>
-                        <p class="lead" style="text-align:justify"><i>Kadambari is a name that suggests you give what you want so other people can have what they need.</i> Women' s skills in handicrafts and service sectors are an important part of India's culture and economy. From traditional weaving and embroidery to modern technology and business management, women have been at the forefront of these industries for generations. Their skills and expertise not only provide a source of income for themselves and their families,but also contribute to the cultural and artistic heritage of the country. Empowering and promoting women's skills in these sectors can lead to greater economic and social opportunities for women, while also preserving and celebrating India's diverse cultural traditions.</p>
+                    <div class="mx-1" style="padding: 0px 30px 0px">
+                        <h1 class="ab2" >About i-Kadambari</h1>
+                        <p class="lead" style="text-align:justify;"><i>Kadambari is a name that suggests you to give what you want so other people can have what they need.</i> Women' s skills in handicrafts and service sectors are an important part of India's culture and economy. From traditional weaving and embroidery to modern technology and business management, women have been at the forefront of these industries for generations. Their skills and expertise not only provide a source of income for themselves and their families,but also contribute to the cultural and artistic heritage of the country. Empowering and promoting women's skills in these sectors can lead to greater economic and social opportunities for women, while also preserving and celebrating India's diverse cultural traditions.</p>
                     </div>
                 </div>
             </div>
@@ -139,18 +152,28 @@ session_start();
 
         <!-- Full-width slides/quotes -->
         <div class="mySlides">
-            <q>“I wanted to stand for those women who want to be beautiful for themselves, not for men or other women.”</q>
-            <p class="author">- Falguni Nayar is the Founder of Nykaa</p>
+            <q>I wanted to stand for those women who want to be beautiful for themselves, not for men or other women.</q>
+            <p class="author">- Falguni Nayar, Founder of Nykaa</p>
         </div>
 
         <div class="mySlides">
-            <q>“When you know you have to fend for yourself every inch of the way, it gives you a different kind of grit and tenacity”</q>
+            <q>When you know you have to fend for yourself every inch of the way, it gives you a different kind of grit and tenacity</q>
             <p class="author">- Shradha Sharma, the Founder, and CEO of YourStory</p>
         </div>
 
         <div class="mySlides">
-            <q>“I was faced with questions like can you do it? Gladly, things are changing and now, they can see me doing it”</q>
-            <p class="author">- Sairee Chahal has established the platform SHEROES</p>
+            <q>I was faced with questions like can you do it? Gladly, things are changing and now, they can see me doing it</q>
+            <p class="author">- Sairee Chahal, SHEROES</p>
+        </div>
+
+        <div class="mySlides">
+            <q>Aim for the sky, but move slowly, enjoying every step along the way.</q>
+            <p class="author">- Chanda Kochhar, CEO ICICI Bank</p>
+        </div>
+
+        <div class="mySlides">
+            <q>To be a CEO is a calling. You should not do it because it is a job. It is a calling, and you have got to be involved in it with your head, heart and hands. Your heart has got to be in the job; you got to love what you do; it consumes you.</q>
+            <p class="author">- Indra Nooyi, Former CEO OF PEPSI</p>
         </div>
 
         <!-- Next/prev buttons -->
@@ -163,6 +186,8 @@ session_start();
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
     </div>
     <!--footer -->
     <?php include 'includes/footer.php' ?>

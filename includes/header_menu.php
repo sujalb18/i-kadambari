@@ -14,7 +14,9 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <img src="./images/logo ikadambari.png"  style="object-fit:cover;height:70px;width:200px" alt="">
+            <a href="index.php">
+            <img src="./images/logo ikadambari.png"  style="object-fit:cover;height:70px;width:200px" alt="" >
+            </a>
             <!-- <a class="navbar-brand" href="#">iKadambari |</a> -->
         </div>
 

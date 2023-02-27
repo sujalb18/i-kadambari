@@ -12,7 +12,7 @@ if (!isset($_SESSION['email'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Planet Shopify | Online Shopping Site for Men</title>
+    <!-- <title>Planet Shopify | Online Shopping Site for Men</title> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -43,11 +43,12 @@ if (!isset($_SESSION['email'])) {
 
 
                         echo "<div class='items-body'>
-
+                        
+                            
                             <div class='row cart-item'>
-                                <div class='col-md-3'>
-                                    <img class='img-fluid' src='./images/shoe1.jpg' />
-                                </div>
+                            <div class='col-md-3'>
+                                <img class='img-fluid' src='./images/krishna diary.jpeg' />
+                            </div>
                                 <div class='col-md-3 col-sm-3 col-xs-3 col-3' style='padding:2%'>
                                     <h5 class='text-style-1'>$name</h5>
                                     <p class='text-style-2'>Rs.$price</p>
@@ -61,7 +62,7 @@ if (!isset($_SESSION['email'])) {
             
                                 <div class='col-md-2 col-sm-3 col-xs-3 col-3' style='padding:2%'>
                                     <h5 class='text-style-2'>Total</h5>
-                                    <p class='text-style-4'>Rs 3000</p>
+                                    <p class='text-style-4'>Rs $price</p>
                                 </div>
                             </div>
                         </div>";

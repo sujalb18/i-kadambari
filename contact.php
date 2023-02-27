@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ikadambari</title>
+    <title>i-kadambari</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,9 +26,8 @@ include 'includes/check-if-added.php';
                 you as soon as possible. </p>
 
             <ul class='chead'>
-                <li>TEL. +91 294 2454655, +91 7737627774</li>
-                <li>EMAIL. ikadambari@life.ORG</li>
-                <li>ADDRESS. Kanakia Rd, Kanakia Park, Mira Road, Mira Bhayandar, Maharashtra 401107</li>
+                <li>EMAIL: ikadambari@life.com</li>
+                <li>ADDRESS: Kanakia Rd, Kanakia Park, Mira Road, Mira Bhayandar, Maharashtra 401107</li>
             </ul>
             <form class='cf'>
                 <div class='half left cf'>
@@ -38,7 +37,8 @@ include 'includes/check-if-added.php';
                 <div class='half right cf'>
                     <textarea class='ctextarea' name='message' type='text' placeholder='Message'></textarea>
                 </div>
-                <input class='cinput' type='submit' value='Submit' id='input-submit' />
+
+                <button type="button" class="my-3 w-50 btn btn-danger">Submit</button>
             </form>
         </div>
     </div>
