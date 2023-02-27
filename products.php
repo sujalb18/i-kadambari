@@ -45,9 +45,9 @@ session_start();
         <div class="row text-center" id="watch">
             <div class="col-md-3 col-6 py-2">
                 <div class="card">
-                    <img src="images/watch1.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/krishna diary.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Guess 1875</h6>
+                        <h6>Krishna's Diary</h6>
                         <h6>Price :Rs 3000</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger text-white ">Add To Cart</a>
@@ -70,9 +70,9 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-2">
                 <div class="card">
-                    <img src="images/watch2.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/Handpainted1.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Guest Watch</h6>
+                        <h6>Hand Painted Wall Arts</h6>
                         <h6>Price :Rs 2500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
@@ -94,9 +94,9 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-2">
                 <div class="card">
-                    <img src="images/watch3.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/handpainted2.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Panerai Watch</h6>
+                        <h6>Hand Painted Wall Arts</h6>
                         <h6>Price :Rs 3500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
@@ -118,9 +118,9 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-2">
                 <div class="card">
-                    <img src="images/watch4.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/Handpainted3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Nonos Watch</h6>
+                        <h6>Hand Painted Wall Arts</h6>
                         <h6>Price :Rs 1800</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
@@ -144,9 +144,9 @@ session_start();
         <div class="row text-center" id="shirt">
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shirt1.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/Handpainted4.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Levis</h6>
+                        <h6>Hand Painted Wall Arts</h6>
                         <h6>Price :Rs 1800</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
@@ -168,9 +168,9 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shirt2.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/Handpainted5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Louis Philippe t-shirt</h6>
+                        <h6>Hand Painted Wall Arts</h6>
                         <h6>Price :Rs 2500</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger  text-white ">Add To Cart</a>
@@ -192,7 +192,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shirt3.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/Handpainted6.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Highlander t-shirt</h6>
                         <h6>Price :Rs 500</h6>
@@ -216,7 +216,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shirt4.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art1.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>GUCCI White t-Shirt</h6>
                         <h6>Price :Rs 2300</h6>
@@ -242,7 +242,7 @@ session_start();
         <div class="row text-center" id="shoes">
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shoe1.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art2.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Nike White Sneaker</h6>
                         <h6>Price :Rs 8000</h6>
@@ -266,7 +266,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shoe2.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Nike White Shoes</h6>
                         <h6>Price :Rs 7500</h6>
@@ -290,7 +290,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shoe3.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art4.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Nike Yellow Sneaker</h6>
                         <h6>Price :Rs 7000</h6>
@@ -314,7 +314,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shoe4.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Nike Sneaker</h6>
                         <h6>Price :Rs 6000</h6>
@@ -340,7 +340,7 @@ session_start();
         <div class="row text-center" id="headphones">
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/sp1.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art6.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Beats Headphone</h6>
                         <h6>Price :Rs 22,500</h6>
@@ -364,7 +364,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/sp2.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art7.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Zolo Headphone</h6>
                         <h6>Price :Rs 4500</h6>
@@ -388,7 +388,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/sp3.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art8.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Sony Speaker</h6>
                         <h6>Price :Rs 10,500</h6>
@@ -412,7 +412,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/sp4.jpg" alt="" class="img-fluid pb-1">
+                    <img src="images/art9.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Airpods</h6>
                         <h6>Price :Rs 15,000</h6>
