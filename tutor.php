@@ -20,9 +20,9 @@ session_start();
   ?>
 
     <div>
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                <div class='mx-4 servicesdescpara'>
                     <h1 class='my-3'>Online Academic classes </h1>
                     <ul>
                         <li>About- Science math, English classes for CBSE,ICSE,and IGCSE boards from std 7 to 10</li>
@@ -31,19 +31,21 @@ session_start();
                         <li>Charges - depends upon standard and subjects </li>
                     </ul>
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                    </a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                <div class='my-4 m-0 d-flex justify-content-center'>
                     <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
                     <img src="./images/tutor.jfif" style="width: 15vw" alt="">
                 </div>
             </div>
         </div>
 
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                <div class='mx-4 servicesdescpara'>
                     <h1 class='my-3'>Sreekala Satheesh Kumar</h1>
                     <ul>
                         <li>Experience - 10-12 years</li>
@@ -51,10 +53,12 @@ session_start();
                         <li>Charges - As per SSC, CBSE, ICSE</li>
                     </ul>
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                    </a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                <div class='my-4 m-0 d-flex justify-content-center'>
                     <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
                     <img src="./images/Tutorphoto.jpg" style="width: 15vw" alt="">
                 </div>

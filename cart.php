@@ -14,7 +14,7 @@ if (!isset($_SESSION['email'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Planet Shopify | Online Shopping Site for Men</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body style='height = 100vh'>
@@ -27,22 +27,22 @@ if (!isset($_SESSION['email'])) {
                 <?php
                 $price = 0;
                 $user_id = $_SESSION['user_id'];
-                   
+
                 $query = " SELECT users_products.quantity as Quantity, products.price AS Price, products.id, products.name AS Name FROM users_products JOIN products ON users_products.item_id = products.id WHERE users_products.user_id='$user_id' and status='Added To Cart'";
 
                 $result = mysqli_query($con, $query);
                 if (mysqli_num_rows($result) >= 1) {
                     ?>
-                        <?php
-                        while ($row = mysqli_fetch_array($result)) {
+                    <?php
+                    while ($row = mysqli_fetch_array($result)) {
 
-                            $price += $row["Price"];
-                            $name = $row["Name"];
-                            $quantity = $row["Quantity"];  
-                            $sum = 1;
+                        $price += $row["Price"];
+                        $name = $row["Name"];
+                        $quantity = $row["Quantity"];
+                        $sum = 1;
 
-                            
-                            echo "<div class='items-body'>
+
+                        echo "<div class='items-body'>
 
                             <div class='row cart-item'>
                                 <div class='col-md-3'>
@@ -52,9 +52,9 @@ if (!isset($_SESSION['email'])) {
                                     <h5 class='text-style-1'>$name</h5>
                                     <p class='text-style-2'>Rs.$price</p>
                                     <div class='wrapper'>
-                                    <button class='btn btn-danger' type='button'>-</button>";
-                                    echo "<span class='num' id='quantities'>$quantity</span>
-                                    <button class='btn btn-danger' onclick='plus($quantity)' type='button'>+</button>
+                                    <button class='btn btn-danger' style='width:2vw' type='button'>-</button>
+                                    <span class='num mx-2' id='quantities'>$quantity</span>
+                                    <button class='btn btn-danger' style='width:2vw' onclick='plus($quantity)' type='button'>+</button>
                                  </div>
                     
                                 </div>
@@ -64,28 +64,26 @@ if (!isset($_SESSION['email'])) {
                                     <p class='text-style-4'>Rs 3000</p>
                                 </div>
                             </div>
-                            <div class='container py-4'>
-                                <div><button class='btn btn-danger custom-btn' type='button'>Buy Product</button></div>
-                            </div>
                         </div>";
-                        }
-                        ?>
+                    }
+                    ?>
                     </tbody>
-                <?php
+                    <?php
                 } else {
                     echo "<div> <img src='images/emptycart.png' class='image-fluid' height='150' width='150'></div><br/>";
                     echo "<div class='text-bold  h5'>Add items to the cart first!<div>";
                 }
                 ?>
-                <?php
-                ?>
+                <div class='container py-4'>
+                    <div><button class='btn btn-danger custom-btn' type='button'>Confirm Order</button></div>
+                </div>
                 </tbody>
             </table>
         </div>
 
     </div>
 
-    
+
     </div>
     <!--footer -->
     <?php include 'includes/footer.php' ?>
@@ -126,10 +124,10 @@ $('#login').modal('show');
 <!-- <script>
     function plus(quantity) {
         <?php
-        
-        
-        if (mysqli_num_rows($result1) >= 1){
-            
+
+
+        if (mysqli_num_rows($result1) >= 1) {
+
         }
 
         ?>
@@ -137,4 +135,5 @@ $('#login').modal('show');
         console.log(quantity);
     }
 </script> -->
+
 </html>

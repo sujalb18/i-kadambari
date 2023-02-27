@@ -20,19 +20,21 @@ session_start();
   ?>
 
     <div>
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
-                    <h1 class=''>Jimibai Jadhav</h1>
+                <div class='my-5 mx-4 servicesdescpara'>
+                    <h1 class='my-3'>Jimibai Jadhav</h1>
                     <ul>
                         <li>Care Taker by profession</li>
                         <li>Charges - </li>
                     </ul>
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                    </a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                <div class='my-4 m-0 d-flex justify-content-center'>
                     <img src="./images/caretaker.jpeg" style="width:10vw" alt="">
                 </div>
             </div>

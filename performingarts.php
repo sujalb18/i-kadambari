@@ -20,9 +20,9 @@ session_start();
   ?>
 
     <div>
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                <div class='my-5 mx-4 servicesdescpara'>
                     <h3 class='my-3'>Expressions By Vaidehi</h3>
                     <ul>
                         <li>Experience - 9 years</li>
@@ -30,17 +30,19 @@ session_start();
                         <li>Charges - Bridel make-up starting Rs. 5000 and simple make-up staring Rs. 1000</li>
                     </ul>
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                        <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                        </a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
-                    <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video>
+                <div class='m-0 afterservvideo'>
+                    <video src='./video/dance1.mp4' style="width: 10vw;margin-top:30px" autoPlay loop muted></video>
                 </div>
             </div>
         </div>
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                <div class='my-5 mx-4 servicesdescpara'>
                     <h3 class='my-3'>Singing classes and event programs Profession classical music and light music classes.</h3>
                     <ul>
                         <li>Experience - 8 years</li>
@@ -48,10 +50,12 @@ session_start();
                         <li>Charges - Rs. 400/- Per Session</li>
                     </ul>
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                    </a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                <div class='m-0 afterservvideo'>
                     <img src="./images/Singer (2).jpeg" style="width:14vw" alt="">
                 </div>
             </div>

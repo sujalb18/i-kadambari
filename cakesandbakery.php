@@ -20,9 +20,9 @@ session_start();
   ?>
 
     <div>
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                <div class='my-5 mx-4 servicesdescpara'>
                     <h1 class=''>Nilpa Nimesh Mehta</h1>
                     <ul>
                         <li>Experience: 2.5 years</li>
@@ -30,11 +30,13 @@ session_start();
                         <li>Charges - 250 per cookies </li>
                     </ul>
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                    </a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
-                    <img src="./images/NilpaMehtaCake.jpg" style="width:10vw" alt="">
+                <div class='my-4 m-0 d-flex justify-content-center'>
+                    <img src="./images/NilpaMehtaCake.jpg" style="width:15vw" alt="">
                 </div>
             </div>
         </div>

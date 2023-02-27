@@ -9,33 +9,30 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ikadambari</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
     <?php
     include 'includes/header_menu.php';
+    include 'includes/check-if-added.php';
     ?>
     <div>
-        <div class='container-fluid mainservicecont d-flex flex-column align-items-center'>
+        <div class='container-fluid mainservicecont d-flex flex-column align-items-center '>
             <div class='my-4 ourserv d-flex flex-column align-items-center'>
                 <div>
                     <h1>Our Services</h1>
                 </div>
                 <div>
-                    <p class='ourservp display-4'>Women are more fit for social service than men. They are the incarnation of
-                        Ahimsa, the very picture of love. They can charge the society by filling the milk of human
-                        kindness in their children. The lap of mother is the first and the best school of every human
-                        being. Women is the maker of man. Let her make man real human being. A lady teacher does more
-                        than a male teacher. The nurses and lady doctors are doing service to the suffering humanity.
+                    
+                    <p class='ourservp display-4'>Women entrepreneurs face unique challenges and barriers, including gender discrimination, lack of access to funding and resources, and societal expectations around gender roles. Despite these challenges, women entrepreneurs have made significant contributions to the global economy and have been recognized as key drivers of innovation and economic growth. Women entrepreneurs have been successful in a variety of industries, including technology, finance, healthcare, and creative industries. They have also been active in social entrepreneurship, using their businesses to address social and environmental challenges in their communities and beyond.    
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class='d-grid servicecontainer m-auto'>
+        <div class='d-grid servicecontainer m-auto w-50'>
 
             <div class='grid-items'>
                 <div class='my-2'>
@@ -230,19 +227,28 @@ session_start();
         </div>
     </div>
 
-
+    <?php include 'includes/footer.php' ?>
 
 </body>
 
 
 
 
-<?php include 'includes/footer.php' ?>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
+});
+$(document).ready(function() {
+
+    if (window.location.href.indexOf('#login') != -1) {
+        $('#login').modal('show');
+    }
+
+});
 </script>
 <?php if (isset($_GET['error'])) {
     $z = $_GET['error'];
@@ -263,6 +269,5 @@ $('#login').modal('show');
 </script>";
     echo "<script type='text/javascript'>alert('" . $z . "')</script>";
 } ?>
-
 
 </html>

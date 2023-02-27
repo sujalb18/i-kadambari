@@ -11,11 +11,91 @@ session_start();
     <title>i Kadambari</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 
 <body style="height: 100vh">
     <!--Header-->
+    <style>
+        /* Slideshow container */
+        .slideshow-container {
+        position: relative;
+        background: #f1f1f1f1;
+    }
+
+    /* Slides */
+    .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+
+    /* The dot/bullet/indicator container */
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #ddd;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    /* Add a background color to the active dot/circle */
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Add an italic font style to all quotes */
+    q {
+        font-style: italic;
+    }
+
+    /* Add a blue color to the author */
+    .author {
+        color: cornflowerblue;
+    }
+</style>
     <?php
     include 'includes/header_menu.php';
     include 'includes/check-if-added.php';
@@ -30,33 +110,21 @@ session_start();
             <p>iKadambari empowers women entrepreneurs by showcasing their unique products and services, made by women for India.</p>
         </div>
 
-        <div>
+        <div class="m-auto d-flex justify-content-center">
             <video class='firstvideo'
-                src='https://ikadambari-life.netlify.app/static/media/Video.7a73ed5fd27ed4865fa5.mp4' style={width='
-                80%' height='500px' } autoPlay loop muted />
+                src='./video/startingvideo.mp4' style='width:60%;border-radius:4px' autoPlay loop muted />
         </div>
         <br></br>
         <div class=" container my-5">
             <div class="row">
                 <div class="col-lg-6 d-flex justify-content-center">
-                    <img class="aboutimg shadow m-0" style={margin-top='40px' }
+                    <img class="aboutimg shadow m-0" style='margin-top:40px;width:50vw;border-radius:4px'
                         src='https://ikadambari-life.netlify.app/static/media/we.87bd460fd7bf4de2dd62.jpeg' />
                 </div>
                 <div class="col-lg-6 aboutdesc">
                     <div class="mx-1">
                         <h1 class="display-4">About iKadambari</h1>
-                        <p class="lead" style="text-align:justify">Women' s skills in handicrafts and service sectors are an important part of
-                            India's culture and economy. From traditional weaving and embroidery to modern technology
-                            and
-                            business management, women have been at the forefront of these industries for generations.
-                            Their
-                            skills and expertise not only provide a source of income for themselves and their families,
-                            but
-                            also contribute to the cultural and artistic heritage of the country. Empowering and
-                            promoting
-                            women's skills in these sectors can lead to greater economic and social opportunities for
-                            women,
-                            while also preserving and celebrating India's diverse cultural traditions.</p>
+                        <p class="lead" style="text-align:justify"><i>Kadambari is a name that suggests you give what you want so other people can have what they need.</i> Women' s skills in handicrafts and service sectors are an important part of India's culture and economy. From traditional weaving and embroidery to modern technology and business management, women have been at the forefront of these industries for generations. Their skills and expertise not only provide a source of income for themselves and their families,but also contribute to the cultural and artistic heritage of the country. Empowering and promoting women's skills in these sectors can lead to greater economic and social opportunities for women, while also preserving and celebrating India's diverse cultural traditions.</p>
                     </div>
                 </div>
             </div>
@@ -64,9 +132,38 @@ session_start();
         <div>
 
             <p></p>
-        </div>
+        </div>  
     </div>
     <!--menu highlights end-->
+    <div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+            <q>“I wanted to stand for those women who want to be beautiful for themselves, not for men or other women.”</q>
+            <p class="author">- Falguni Nayar is the Founder of Nykaa</p>
+        </div>
+
+        <div class="mySlides">
+            <q>“When you know you have to fend for yourself every inch of the way, it gives you a different kind of grit and tenacity”</q>
+            <p class="author">- Shradha Sharma, the Founder, and CEO of YourStory</p>
+        </div>
+
+        <div class="mySlides">
+            <q>“I was faced with questions like can you do it? Gladly, things are changing and now, they can see me doing it”</q>
+            <p class="author">- Sairee Chahal has established the platform SHEROES</p>
+        </div>
+
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <!--footer -->
     <?php include 'includes/footer.php' ?>
     <!--footer end-->
@@ -108,5 +205,38 @@ $('#login').modal('show');
 </script>";
     echo "<script type='text/javascript'>alert('" . $z . "')</script>";
 } ?>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+</script>
 
 </html>

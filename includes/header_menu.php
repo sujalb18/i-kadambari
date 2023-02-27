@@ -3,31 +3,19 @@
     background-color: #80202b;
 }
 
-/* .dropdown:hover .dropdown-menu {
-    display: block;
-}
 
-.dropdown-menu {
-    border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #f8f9fa;
-}
-
-.dropdown-item:hover {
-    background-color: #e9ecef;
-    color: #343a40;
-} */
 </style>
 
 <nav class="navbar navbar-expand-lg d-flex navbar-dark navcolor">
     <div class="container-fluid d-flex justify-content-between">
         <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">iKadambari |</a>
+            <img src="./images/logo ikadambari.png"  style="object-fit:cover;height:70px;width:200px" alt="">
+            <!-- <a class="navbar-brand" href="#">iKadambari |</a> -->
         </div>
 
         <div class='w-50 mx-5'>
@@ -38,35 +26,18 @@
             </form>
         </div>
 
-        <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item active">
-                    <a class="nav-link " aria-current="page" href="index.php">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.php">Services</a>
+                    <a class="nav-link" role="button" aria-expanded="false" href="services.php">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.php" role="button" aria-expanded="false">Product
                     </a>
-                    <!-- <ul class="dropdown-menu hover-effect">
-                        <li><a class="dropdown-item dropdown-content" href="#"><b><i>Categories</i></b></a></li>
-
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item  dropdown-content" href="#">Handicrafts</a></li>
-                        <li><a class="dropdown-item dropdown-content" href="#">Wall Arts</a></li>
-                        <li><a class="dropdown-item dropdown-content" href="#">Jewellery</a></li>
-                        <li><a class="dropdown-item dropdown-content" href="#">Textiles</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item dropdown-content" href="#"><b><i>Materials</i></b></a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                    </ul> -->
+                
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
@@ -81,7 +52,7 @@
                 <?php
       if (isset($_SESSION['email'])) {
         ?>
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="logout_script.php" class="nav-link"><i
                                 class="fa fa-sign-out"></i>Logout</a></li>
                     <li class="nav-item"><a class="nav-link " data-placement="bottom" data-toggle="popover"
@@ -91,7 +62,7 @@
                 <?php
       } else {
         ?>
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="#signup" class="nav-link" data-toggle="modal"><i
                                 class="fa fa-user"></i>Sign up</a></li>
                     <li class="nav-item "><a href="#login" class="nav-link" data-toggle="modal"><i

@@ -20,57 +20,42 @@ session_start();
   ?>
 
     <div>
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
-                    <h1 class='my-3'>nishachauhan_makeovers</h1>
+                <div class='my-5 mx-4 servicesdescpara'>
+                    <h4 class=''>nishachauhan_makeovers</h4>
                     <ul>
                         <li>Experience - 9 years</li>
                         <li>Location - Bhayender (East)</li>
                         <li>Charges - Bridel make-up starting Rs. 5000 and simple make-up staring Rs. 1000</li>
                     </ul>
-                    <!-- <p class='my-5 mx-4'>A beauty artist, also known as a makeup artist, is a skilled professional who
-          specializes in enhancing a person's appearance through makeup application. These artists use their knowledge
-          of colors, textures, and techniques to create a variety of looks that range from natural and understated to
-          bold and dramatic. Whether working with models, actors, brides, or everyday people, beauty artists have the
-          ability to transform a person's appearance and boost their confidence. They are skilled in creating flawless
-          complexions, defining features, and accentuating natural beauty. In addition to their technical skills, beauty
-          artists also possess strong communication skills, as they must listen to their clients' needs and preferences
-          while also providing expert advice and recommendations. The work of a beauty artist is not only creative and
-          artistic but also requires a keen attention to detail and a deep understanding of the human face and skin.</p> -->
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                        <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button></a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                <div class='my-4 m-0 d-flex justify-content-center'>
                     <video src='./video/makeupvideo.mp4' style="width: 10vw" autoPlay loop muted></video>
                 </div>
             </div>
         </div>
     </div>
-    <div class='w-75 m-auto afterservices d-flex'>
+    <div class='m-auto afterservices d-flex'>
         <div class="container servicess my-5 d-flex justify-content-center">
-            <div class='w-50 my-5 mx-4 servicesdescpara'>
-                <h1 class='my-3'>Makeupby.dipika</h1>
+            <div class='my-5 mx-4 servicesdescpara'>
+                <h3>Makeupby.dipika</h3>
                 <ul>
                     <li>Experience - 14 years</li>
                     <li>Location - Mumbai</li>
                     <li>Charges - Vary</li>
                 </ul>
-                <!-- <p class='my-5 mx-4'>A beauty artist, also known as a makeup artist, is a skilled professional who
-          specializes in enhancing a person's appearance through makeup application. These artists use their knowledge
-          of colors, textures, and techniques to create a variety of looks that range from natural and understated to
-          bold and dramatic. Whether working with models, actors, brides, or everyday people, beauty artists have the
-          ability to transform a person's appearance and boost their confidence. They are skilled in creating flawless
-          complexions, defining features, and accentuating natural beauty. In addition to their technical skills, beauty
-          artists also possess strong communication skills, as they must listen to their clients' needs and preferences
-          while also providing expert advice and recommendations. The work of a beauty artist is not only creative and
-          artistic but also requires a keen attention to detail and a deep understanding of the human face and skin.</p> -->
                 <div class='w-100'>
-                    <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    <a href="appointment_page.php">
+                    <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                    </a>
                 </div>
             </div>
-            <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+            <div class='my-4 m-0 d-flex justify-content-center'>
                 <video src='./video/makupvideo2.mp4' style="width: 15vw" autoPlay loop muted></video>
             </div>
         </div>

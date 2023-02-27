@@ -44,16 +44,15 @@
   }
   
   .servicecontainer {
-    /* text-decoration: none; */
     position: relative;
     display: flex;
     justify-content: space-around;
-    top: -60px;
+    top: -30px;
     width: 40%;
     z-index: 2;
     display: grid;
     grid-template-columns: auto auto auto;
-    border-radius: 20px;
+    border-radius: 4px;
     box-shadow: 0 8px 26px 0 rgb(0 0 0 / 8%);
     height: 270px;
     background-color: white;
@@ -63,6 +62,12 @@
     color: black;
     text-decoration: none;
   }
+  .afterservvideo{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+  }
+
   .grid-items {
     margin: auto;
     width: 10vw;
@@ -178,7 +183,7 @@
     position: relative;
     z-index: -1;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/backgroundimage.jpg");
+      url("https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -366,7 +371,6 @@
   
   .cart-btn {
     margin-top: 50%;
-    /* margin-right: 50%; */
     background: #383838;
     color: #fff;
   }
@@ -394,10 +398,12 @@
   }
   
   .servicesdescpara{
+    width: 50%;
     text-align: justify;
   }
   .afterservices{
-    max-height: 600px;
+    width: 75%;
+    /* height: 600px; */
   }
   .card{
     /* width: 1263px; */
@@ -432,6 +438,9 @@
     justify-content: space-between;
   }
 
+  .appointmentbtn{
+    width: 50%;
+  }
 
   .servicess{
     background-color: rgb(241, 241, 241);
@@ -453,6 +462,28 @@
     .ourservp{
       font-size: 15px;
       line-height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1057px) {
+    .servicess{
+        width: 50%;
+        flex-direction: column-reverse;
+    }
+    .afterservices{
+      width: 50vw;
+      min-height: 700px;
+    }
+    .servicesdescpara{
+      width: 90%;
+    }
+    .afterservvideo{
+      margin-top: 30px;
+      align-items: center;
+      width: 100% ;
+    }
+    .appointmentbtn{
+      width: 100%;
     }
   }
 
@@ -478,7 +509,24 @@
     }
   }
 
+
+
+
+
   .lead{
     text-align: justify;
   }
+  
+  @media screen and (max-width: 604px) {
+    .afterservices{
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 387px) {
+    .afterservices{
+      width: 100%;
+    }
+  }
+
   

@@ -19,7 +19,6 @@ session_start();
   include 'includes/header_menu.php';
   ?>
     <style>
-    /* Fading animation */
     .fade {
         animation-name: fade;
         animation-duration: 1.5s;
@@ -37,9 +36,9 @@ session_start();
     </style>
 
     <div>
-        <div class='w-75 m-auto afterservices d-flex'>
+        <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
-                <div class='w-50 my-5 mx-4 servicesdescpara'>
+                <div class='my-5 mx-4 servicesdescpara'>
                     <h3 class='my-3'>Musical Yoga and Fitness Academy</h3>
                     <ul>
                         <li>Experience - 9 years</li>
@@ -47,10 +46,12 @@ session_start();
                         <li>Charges - Standard Charges</li>
                     </ul>
                     <div class='w-100'>
-                        <button type="button" class="btn btn-danger w-50">Make an Appointment</button>
+                    <a href="appointment_page.php">
+                        <button type="button" class="btn btn-danger appointmentbtn">Make an Appointment</button>
+                    </a>
                     </div>
                 </div>
-                <div class='my-4 w-25 m-0 d-flex justify-content-center'>
+                <div class='my-4 m-0 d-flex justify-content-center'>
                     <div class="mySlides fade">
                         <img src="./images/yoga (1).jpeg" style="width:30vw; height:30vh">
                     </div>
@@ -63,7 +64,6 @@ session_start();
                     <div class="mySlides fade">
                         <img src="./images/yoga (4).jpeg" style="width:30vw; height:30vh">
                     </div>
-                    <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
                 </div>
             </div>
         </div>

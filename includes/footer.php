@@ -1,3 +1,4 @@
+
 <style>
 .footcolor {
     background-color: #80202b;
@@ -5,19 +6,20 @@
 .footerp{
     text-align: justify;
 }
+.footerpara{
+    text-align: center;
+}
 .footera{
     color: white;
     text-decoration: none;
-
 }
 </style>
-
 <footer class="text-white text-center text-md-start footcolor">
     <div class="container p-4">
         <div class="row">
             <br></br>
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Our Mission</h5>
+            <div class="w-75 m-auto">
+                <h5 class="text-uppercase footerpara">Our Mission</h5>
 
                 <p class="footerp">
                     "Our mission is to empower women in India by providing a platform that connects them to
@@ -28,7 +30,7 @@
                     across India."
                 </p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase">About</h5>
 
                 <ul class="list-unstyled mb-0">
@@ -63,13 +65,13 @@
                         <a href="#!" class="text-white">Contact</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="text-center p-3">
         Conceputualized By <br>
         <a href="https://www.linkedin.com/in/krishna-tiwari-2723671b2/" target="_blank" class="footera">
-        <i class="text-center">Krishna Tiwari</i>
+        <i class="text-center"> <img src="./images/linkedIn.png" style="width:20px" alt=""> Krishna Tiwari</i></i>
         </a>
     </div>
     <div class="text-center p-3">
