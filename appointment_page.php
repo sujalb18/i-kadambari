@@ -24,8 +24,8 @@
     />
   </head>
   <body>
-    <div class="container d-lg-flex">
-      <div class="box-1 bg-light user">
+    <div class="container d-lg-flex justify-content-center">
+      <!-- <div class="box-1 bg-light user">
         <div class="d-flex align-items-center mb-3">
           <img
             src="https://images.pexels.com/photos/4925916/pexels-photo-4925916.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -68,8 +68,8 @@
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
-            </div>
-            <div class="carousel-inner">
+            </div> -->
+            <!-- <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
                   src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -88,8 +88,8 @@
                   class="d-block w-100"
                 />
               </div>
-            </div>
-            <button
+            </div> -->
+            <!-- <button
               class="carousel-control-prev"
               type="button"
               data-bs-target="#my"
@@ -121,25 +121,25 @@
             <input type="radio" name="box" id="one" />
             <input type="radio" name="box" id="two" />
             <input type="radio" name="box" id="three" />
-            <label for="one" class="box py-2 first">
-              <div class="d-flex align-items-start">
+            <label for="one" class="box py-2 first"> -->
+              <!-- <div class="d-flex align-items-start">
                 <span class="circle"></span>
                 <div class="course">
                   <div
                     class="d-flex align-items-center justify-content-between mb-2"
-                  >
+                  > -->
                     <!-- <span class="fw-bold"> Collection 01 </span>
                     <span class="fas fa-dollar-sign">29</span>
                   </div>
                   <span>10 x Presets. Released in 2018</span> -->
-                  </div>
+                  <!-- </div>
                 </div>
               </div>
-            </label>
-            <label for="two" class="box py-2 second">
+            </label> -->
+            <!-- <label for="two" class="box py-2 second">
               <div class="d-flex">
                 <span class="circle"></span>
-                <div class="course">
+                <div class="course"> -->
                   <!-- <div
                     class="d-flex align-items-center justify-content-between mb-2"
                   >
@@ -148,7 +148,7 @@
                   
                   <span>10 x Presets. Released in 2018</span> 
                   </div> -->
-                </div>
+                <!-- </div>
               </div>
             </label>
             <label for="three" class="box py-2 third">
@@ -157,18 +157,18 @@
                 <div class="course">
                   <div
                     class="d-flex align-items-center justify-content-between mb-2"
-                  >
+                  > -->
                     <!-- <span class="fw-bold"> Collection 01 </span> -->
                     <!-- <span class="fas fa-dollar-sign">29</span>
                   
                   <span>10 x Presets. Released in 2018</span> -->
-                  </div>
+                  <!-- </div>
                 </div>
               </div>
             </label>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="box-2">
         <div class="box-inner-2">
           <div>
@@ -183,7 +183,7 @@
               <input
                 class="form-control"
                 type="email"
-                value="luke@skywalker.com"
+                placeholder="example@gmail.com"
               />
             </div>
             <div>
@@ -267,8 +267,8 @@
                       <span class="fas fa-dollar-sign"></span>35.80
                     </p>
                   </div>
-                  <div class="btn btn-primary mt-2">
-                    Pay<span class="fas fa-dollar-sign px-1"></span>35.80
+                  <div class="btn btn-primary">
+                    Pay Now
                   </div>
                 </div>
               </div>

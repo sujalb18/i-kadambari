@@ -113,7 +113,7 @@ session_start();
     include 'includes/header_menu.php';
     include 'includes/check-if-added.php';
     ?>
-    <!--Header ends-->
+
     <div class='container-fluid d-flex flex-column align-items-center' style=" margin-top: 40px">
         <div >
             <h1 class="hero">Empowering Women, Empowering India</h1>
@@ -147,10 +147,9 @@ session_start();
             <p></p>
         </div>  
     </div>
-    <!--menu highlights end-->
+
     <div class="slideshow-container">
 
-        <!-- Full-width slides/quotes -->
         <div class="mySlides">
             <q>I wanted to stand for those women who want to be beautiful for themselves, not for men or other women.</q>
             <p class="author">- Falguni Nayar, Founder of Nykaa</p>

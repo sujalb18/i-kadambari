@@ -38,7 +38,7 @@ include 'includes/check-if-added.php';
                     <textarea class='ctextarea' name='message' type='text' placeholder='Message'></textarea>
                 </div>
 
-                <button type="button" class="my-3 w-50 btn btn-danger">Submit</button>
+                <button type="button" class="my-3 w-100 btn btn-danger">Submit</button>
             </form>
         </div>
     </div>

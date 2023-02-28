@@ -76,7 +76,11 @@ if (!isset($_SESSION['email'])) {
                 }
                 ?>
                 <div class='container py-4'>
-                    <div><button class='btn btn-danger custom-btn' type='button'>Confirm Order</button></div>
+                    <div>
+                        <a href="appointment_page.php">
+                        <button class='btn btn-danger custom-btn' type='button'>Confirm Order</button>
+                        </a>
+                    </div>
                 </div>
                 </tbody>
             </table>
