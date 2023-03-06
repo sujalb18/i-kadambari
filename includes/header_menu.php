@@ -1,8 +1,16 @@
+<!-- <?php
+session_start();
+?> -->
 <style>
 .navcolor {
     background-color: #80202b;
 }
 
+@media screen and (max-width: 1000px) {
+    #logoimage{
+        margin-left:30px;
+    }
+}
 
 </style>
 
@@ -15,9 +23,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="index.php">
-            <img src="./images/logo ikadambari.png"  style="object-fit:cover;height:70px;width:200px" alt="" >
+            <img src="./images/Ikadambari logo-07.jpg" id='logoimage'  style="object-fit:cover;width:80px" alt="" >
             </a>
-            <!-- <a class="navbar-brand" href="#">iKadambari |</a> -->
         </div>
 
         <div class='w-50 mx-5'>
