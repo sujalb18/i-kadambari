@@ -45,16 +45,70 @@ session_start();
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function() $('[data-toggle="popover"]').popover(););
-$(document).ready(function()
+$(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
+});
+$(document).ready(function() {
 
-    if (window.location.href.indexOf('#login') != -1)
+    if (window.location.href.indexOf('#login') != -1) {
         $('#login').modal('show');
-);
+    }
+
+});
+</script>
+<?php if (isset($_GET['error'])) {
+    $z = $_GET['error'];
+    echo "<script type='text/javascript'>
+$(document).ready(function(){
+$('#signup').modal('show');
+});
+</script>";
+    echo "<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
+
+<?php if (isset($_GET['errorl'])) {
+    $z = $_GET['errorl'];
+    echo "<script type='text/javascript'>
+$(document).ready(function(){
+$('#login').modal('show');
+});
+</script>";
+    echo "<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 </script>
 
 

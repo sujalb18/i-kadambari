@@ -13,27 +13,36 @@ session_start();
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 <style>
-     body{
-    background-color: rgb(240, 240, 240) ;
+    body {
+        background-color: rgb(240, 240, 240);
     }
-    .fontsizeserv{
-    background-color: rgb(240, 240, 240) ;
+
+    .fontsizeserv {
+        background-color: rgb(240, 240, 240);
     }
 </style>
+
 <body>
     <?php
     include 'includes/header_menu.php';
     include 'includes/check-if-added.php';
     ?>
     <div>
-        <div class='container-fluid mainservicecont d-flex flex-column align-items-center '>
+        <div class='container-fluid mainservicecont d-flex flex-column align-items-center'>
             <div class='my-4 ourserv d-flex flex-column align-items-center'>
                 <div>
                     <h1>Our Services</h1>
                 </div>
                 <div>
-                    
-                    <p class='ourservp display-4'>Women entrepreneurs face unique challenges and barriers, including gender discrimination, lack of access to funding and resources, and societal expectations around gender roles. Despite these challenges, women entrepreneurs have made significant contributions to the global economy and have been recognized as key drivers of innovation and economic growth. Women entrepreneurs have been successful in a variety of industries, including technology, finance, healthcare, and creative industries. They have also been active in social entrepreneurship, using their businesses to address social and environmental challenges in their communities and beyond.    
+
+                    <p class='ourservp display-4'>Women entrepreneurs face unique challenges and barriers, including
+                        gender discrimination, lack of access to funding and resources, and societal expectations around
+                        gender roles. Despite these challenges, women entrepreneurs have made significant contributions
+                        to the global economy and have been recognized as key drivers of innovation and economic growth.
+                        Women entrepreneurs have been successful in a variety of industries, including technology,
+                        finance, healthcare, and creative industries. They have also been active in social
+                        entrepreneurship, using their businesses to address social and environmental challenges in their
+                        communities and beyond.
                     </p>
                 </div>
             </div>
@@ -110,7 +119,8 @@ session_start();
 
             <div class='grid-items'>
                 <div class='my-2'>
-                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/banking-finance/financial-advisor-icon.svg' width='30px' height='40px' />
+                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/banking-finance/financial-advisor-icon.svg'
+                        width='30px' height='40px' />
                 </div>
                 <div>
                     <b><a href='#' class='aref'>
@@ -121,7 +131,8 @@ session_start();
 
             <div class='grid-items'>
                 <div class='my-2'>
-                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/medical-science-lab/healthcare-icon.svg' width='30px' height='40px' />
+                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/medical-science-lab/healthcare-icon.svg'
+                        width='30px' height='40px' />
                 </div>
                 <div>
                     <b><a href='#' class='aref'>
@@ -133,13 +144,14 @@ session_start();
 
         </div>
         <hr />
-        <div class='container-fluid' id='danceLink'>
+        <div class='container-fluid'>
             <div class='DanceServices fontsizeserv'>
                 <h4 class='display-4 fontsizeserv'>Our Services</h4>
             </div>
 
-            <div class='d-flex justify-content-sm-around responsiveserv my-3'>
-                <div>
+            <div class='serviceprovided responsiveserv my-3'>
+
+                <div class='my-3'>
                     <div>
                         <a href='performingarts.php' class='aref'>
                             <div>
@@ -152,8 +164,9 @@ session_start();
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <div>
+                    <div class='my-3'>
                         <a href='tutor.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/5905960/pexels-photo-5905960.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -165,8 +178,9 @@ session_start();
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <div>
+                    <div class='my-3'>
                         <a href='investmentadvisor.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -178,8 +192,9 @@ session_start();
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <div>
+                    <div class='my-3'>
                         <a href='healthservices.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/5215006/pexels-photo-5215006.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -191,17 +206,9 @@ session_start();
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class='container-fluid' id='beautyLink'>
-            <!-- <div class='BeautyServices'>
-                    <h4 class='display-4 fontsizeserv'>About Beauty Services</h4>
-                </div>  -->
-
-            <div class='d-flex justify-content-sm-around responsiveserv my-3'>
                 <div>
-                    <div>
+                    <div class='my-3'>
                         <a href='makeup.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/3089849/pexels-photo-3089849.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -213,8 +220,9 @@ session_start();
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <div>
+                    <div class='my-3'>
                         <a href='yoga.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/3984337/pexels-photo-3984337.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -226,8 +234,9 @@ session_start();
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <div>
+                    <div class='my-3'>
                         <a href='nursingandcaretaking.php' class='aref'>
                             <div>
                                 <img src='https://images.pexels.com/photos/6436284/pexels-photo-6436284.jpeg?auhref=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -239,11 +248,12 @@ session_start();
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <div>
+                    <div class='my-3'>
                         <a href='cakesandbakery.php' class='aref'>
                             <div>
-                                <img src='https://images.pexels.com/photos/7525168/pexels-photo-7525168.jpeg'
+                                <img src='https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                     class='servimages' width='300px' height='200px' />
                             </div>
                             <div class='my-3'>
@@ -260,24 +270,21 @@ session_start();
 
 </body>
 
-
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
-});
-$(document).ready(function() {
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+    $(document).ready(function () {
 
-    if (window.location.href.indexOf('#login') != -1) {
-        $('#login').modal('show');
-    }
+        if (window.location.href.indexOf('#login') != -1) {
+            $('#login').modal('show');
+        }
 
-});
+    });
 </script>
 <?php if (isset($_GET['error'])) {
     $z = $_GET['error'];
