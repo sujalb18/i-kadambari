@@ -16,9 +16,8 @@ session_start();
 
 
 <body style="height: 100vh">
-    <!--Header-->
+
     <style>
-        /* Slideshow container */
         .slideshow-container {
         position: relative;
         background: #f1f1f1f1;
@@ -33,14 +32,14 @@ session_start();
     height: 50vh;
            
     }
-    /* Slides */
+
     .mySlides {
         display: none;
         padding: 80px;
         text-align: center;
     }
 
-    /* Next & previous buttons */
+
     .prev,
     .next {
         cursor: pointer;
@@ -57,28 +56,24 @@ session_start();
         transition: 0.6s ease;
     }
 
-    /* Position the "next button" to the right */
     .next {
         position: absolute;
         right: 0;
         border-radius: 3px 0 0 3px;
     }
 
-    /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
         background-color: rgba(0, 0, 0, 0.8);
         color: white;
     }
 
-    /* The dot/bullet/indicator container */
     .dot-container {
         text-align: center;
         padding: 20px;
         background: #ddd;
     }
 
-    /* The dots/bullets/indicators */
     .dot {
         cursor: pointer;
         height: 15px;
@@ -90,21 +85,19 @@ session_start();
         transition: background-color 0.6s ease;
     }
 
-    /* Add a background color to the active dot/circle */
     .active,
     .dot:hover {
         background-color: #717171;
     }
 
-    /* Add an italic font style to all quotes */
     q {
         font-style: italic;
     }
 
-    /* Add a blue color to the author */
     .author {
         color: cornflowerblue;
     }
+
     .firstvideo{
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -167,7 +160,7 @@ session_start();
 
         <div class="mySlides">
             <q>Aim for the sky, but move slowly, enjoying every step along the way.</q>
-            <p class="author">- Chanda Kochhar, CEO ICICI Bank</p>
+            <p class="author">- Chanda Kochhar, CEO ICICI Bank</p>
         </div>
 
         <div class="mySlides">
@@ -175,12 +168,10 @@ session_start();
             <p class="author">- Indra Nooyi, Former CEO OF PEPSI</p>
         </div>
 
-        <!-- Next/prev buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <!-- Dots/bullets/indicators -->
     <div class="dot-container">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -188,9 +179,8 @@ session_start();
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-    <!--footer -->
+
     <?php include 'includes/footer.php' ?>
-    <!--footer end-->
 
 </body>
 
@@ -261,6 +251,8 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
 </script>
+
 
 </html>

@@ -20,6 +20,10 @@ session_start();
     .fontsizeserv {
         background-color: rgb(240, 240, 240);
     }
+
+    .lowfontsize {
+        font-size: 15px;
+    }
 </style>
 
 <body>
@@ -51,94 +55,112 @@ session_start();
         <div class='d-grid servicecontainer m-auto'>
 
             <div class='grid-items'>
-                <div class='my-2'>
-                    <img src='images/beautyicon.png' alt="BGIMG" width='30px' height='40px' />
-                </div>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='images/beautyicon.png' alt="BGIMG" width='30px' height='40px' />
+                    </div>
 
-                <div>
-                    <b>
-                        <p style="fontSize: 0.9rem" class="lowfontsize">Beauty Parlour for Women</p>
-                    </b>
-                </div>
+                    <div>
+                        <b> <a href='#ourservheading' class='aref'>
+                                <p class="lowfontsize">Beauty Parlour</p>
+                            </a>
+                        </b>
+                    </div>
+                </a>
             </div>
 
             <div class='grid-items '>
-                <div class='my-2'>
-                    <img src='images/yogaicon.png' width='30px' height='40px' />
-                </div>
-                <div>
-                    <b><a href='#' class='aref'>
-                            <p style=" fontSize: 0.9rem" class="lowfontsize">Yoga Teacher</p>
-                        </a></b>
-                </div>
-            </div>
-
-
-            <div class='grid-items'>
-                <div class='my-2'>
-                    <img src='images/danceicon.png' width='30px' height='40px' />
-                </div>
-                <div>
-                    <b>
-                        <p style="fontSize: 0.9rem" class="lowfontsize">Dance Classes</p>
-                    </b>
-                </div>
-            </div>
-            <div class='grid-items'>
-                <div class='my-2'>
-                    <img src='images/concerticon.png' width='30px' height='40px' />
-                </div>
-                <div>
-                    <b><a href='#' class='aref'>
-                            <p style="fontSize: 0.9rem" class="lowfontsize">Singing Classes</p>
-                        </a></b>
-                </div>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='images/yogaicon.png' width='30px' height='40px' />
+                    </div>
+                    <div>
+                        <b><a href='#ourservheading' class='aref'>
+                                <p class="lowfontsize">Yoga Teacher</p>
+                            </a></b>
+                    </div>
+                </a>
             </div>
 
             <div class='grid-items'>
-                <div class='my-2'>
-                    <img src='images/fooddonationicon.png' width='30px' height='40px' />
-                </div>
-                <div>
-                    <b><a href='#' class='aref'>
-                            <p style=" fontSize: 0.9rem" class="lowfontsize">Food Services</p>
-                        </a></b>
-                </div>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='images/danceicon.png' width='30px' height='40px' />
+                    </div>
+                    <div>
+                        <b> <a href='#ourservheading' class='aref'>
+                                <p class="lowfontsize">Dance Classes</p>
+                            </a>
+                        </b>
+                    </div>
+                </a>
             </div>
 
             <div class='grid-items'>
-                <div class='my-2'>
-                    <img src='images/educationstudyicon.png' width='30px' height='40px' />
-                </div>
-                <div>
-                    <b><a href='#' class='aref'>
-                            <p style=" fontSize: 0.9rem" class="lowfontsize">Home Tuitions</p>
-                        </a></b>
-                </div>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='images/singingicon.png' width='30px' height='40px' />
+                    </div>
+                    <div>
+                        <b><a href='#ourservheading' class='aref'>
+                                <p class="lowfontsize">Singing Classes</p>
+                            </a></b>
+                    </div>
+                </a>
             </div>
 
             <div class='grid-items'>
-                <div class='my-2'>
-                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/banking-finance/financial-advisor-icon.svg'
-                        width='30px' height='40px' />
-                </div>
-                <div>
-                    <b><a href='#' class='aref'>
-                            <p style="fontSize: 0.9rem" class="lowfontsize">Business and Finance</p>
-                        </a></b>
-                </div>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='images/fooddonationicon.png' width='30px' height='40px' />
+                    </div>
+                    <div>
+                        <b><a href='#ourservheading' class='aref'>
+                                <p class="lowfontsize">Food Services</p>
+                            </a></b>
+                    </div>
+                </a>
             </div>
 
             <div class='grid-items'>
-                <div class='my-2'>
-                    <img src='https://uxwing.com/wp-content/themes/uxwing/download/medical-science-lab/healthcare-icon.svg'
-                        width='30px' height='40px' />
-                </div>
-                <div>
-                    <b><a href='#' class='aref'>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='images/educationstudyicon.png' width='30px' height='40px' />
+                    </div>
+                    <div>
+                        <b><a href='#ourservheading' class='aref'>
+                                <p class="lowfontsize">Home Tuitions</p>
+                            </a></b>
+                    </div>
+                </a>
+            </div>
+
+            <div class='grid-items'>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='https://uxwing.com/wp-content/themes/uxwing/download/banking-finance/financial-advisor-icon.svg'
+                            width='30px' height='40px' />
+                    </div>
+                    <div>
+                        <b><a href='#ourservheading' class='aref'>
+                                <p class="lowfontsize">Business and Finance</p>
+                            </a></b>
+                    </div>
+                </a>
+            </div>
+
+            <div class='grid-items'>
+                <a href='#ourservheading' class='aref'>
+                    <div class='my-2'>
+                        <img src='https://uxwing.com/wp-content/themes/uxwing/download/medical-science-lab/healthcare-icon.svg'
+                            width='30px' height='40px' />
+                    </div>
+                    <div>
+                        <b>
                             <p style=" fontSize: 0.9rem" class="lowfontsize">Health Services</p>
-                        </a></b>
-                </div>
+                        </b>
+                    </div>
+                </a>
             </div>
 
 
@@ -146,7 +168,7 @@ session_start();
         <hr />
         <div class='container-fluid'>
             <div class='DanceServices fontsizeserv'>
-                <h4 class='display-4 fontsizeserv'>Our Services</h4>
+                <h4 class='display-4 fontsizeserv' id="ourservheading">Our Services</h4>
             </div>
 
             <div class='serviceprovided responsiveserv my-3'>

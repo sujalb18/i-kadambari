@@ -118,13 +118,14 @@ session_start();
                         <input type="checkbox" class="form-check-input">
                         <label for="checkbox" class="form-check-label">Check me out</label>
                     </div>
-                    <button type="submit" class="btn btn-secondary btn-block" name="Submit">Login</button>
+                    <button type="submit" class="btn btn-danger btn-block" name="Submit" style="
+                        width: 100%;">Login</button>
                 </form>
-                <a href="http://">forgot password ?</a>
+                <a href="http://">Forgot Password ?</a>
             </div>
             <div class="modal-footer">
-                <p class="mr-auto">New User? <a href="#signup" data-toggle="modal" data-dismiss="modal">signup</a></p>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <p class="mr-auto">New User? <a href="#signup" data-toggle="modal" data-dismiss="modal">Sign up</a></p>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -174,13 +175,14 @@ session_start();
                         <input type="checkbox" class="form-check-input" required>
                         <label for="checkbox" class="form-check-label">Agree terms and Condition</label>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block" name="Submit">Sign Up</button>
+                    <button type="submit" class="btn btn-danger btn-block" name="Submit" style="
+                        width: 100%;">Sign Up</button>
                 </form>
             </div>
             <div class="modal-footer">
                 <p class="mr-auto">Already Registered?<a href="#login" data-toggle="modal"
                         data-dismiss="modal">Login</a></p>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
