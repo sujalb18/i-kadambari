@@ -13,6 +13,10 @@
     color: white;
     text-decoration: none;
 }
+.footera:hover{
+    text-decoration: none;
+    color: white;
+}
 </style>
 <footer class="text-white text-center text-md-start footcolor">
     <div class="container p-4">

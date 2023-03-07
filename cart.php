@@ -82,8 +82,8 @@ if (!isset($_SESSION['email'])) {
                           </div>
                           <div class='py-4'>
                             <div class='m-auto d-flex justify-content-center'>
-                                <a href='products.php'>
-                                <button class='btn btn-danger custom-btn' type='button'>Add Items</button>
+                                <a href='products.php' class='w-50'>
+                                <button class='btn btn-danger custom-btn w-100' type='button'>Add Items</button>
                                 </a>
                             </div>
                         </div>";
