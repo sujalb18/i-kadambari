@@ -13,6 +13,8 @@
     background-color: #80202b;
   }
 
+  
+
   .shantellfont{
     font-family: 'Shantell Sans', cursive;
   }
@@ -458,6 +460,8 @@
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+
   @media screen and (max-width: 1250px) {
     .serviceprovided{
       display: flex;

@@ -13,7 +13,22 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+<style>
+    .videoofservprovider{
+        width: 10vw;
+    }
+    @media screen and (max-width: 1055px) {
+        .videoofservprovider{
+            width: 20vw;
+        }
+    }
 
+    @media screen and (max-width: 610px) {
+        .videoofservprovider{
+            width: 30vw;
+        }
+    }
+</style>
 <body>
     <?php
   include 'includes/header_menu.php';
@@ -23,7 +38,7 @@ session_start();
         <div class='m-auto afterservices d-flex'>
             <div class="container servicess my-5 d-flex justify-content-center">
                 <div class='my-5 mx-4 servicesdescpara'>
-                    <h4 class=''>nishachauhan_makeovers</h4>
+                    <h3 class=''>nishachauhan_makeovers</h3>
                     <ul>
                         <li>Experience - 9 years</li>
                         <li>Location - Bhayender (East)</li>
@@ -35,7 +50,7 @@ session_start();
                     </div>
                 </div>
                 <div class='my-4 m-0 d-flex justify-content-center'>
-                    <video src='./video/makeupvideo.mp4' style="width: 10vw" autoPlay loop muted></video>
+                    <video src='./video/makeupvideo.mp4' class="videoofservprovider" autoPlay loop muted></video>
                 </div>
             </div>
         </div>
@@ -56,7 +71,7 @@ session_start();
                 </div>
             </div>
             <div class='my-4 m-0 d-flex justify-content-center'>
-                <video src='./video/makupvideo2.mp4' style="width: 15vw" autoPlay loop muted></video>
+                <video src='./video/makupvideo2.mp4' class="videoofservprovider" autoPlay loop muted></video>
             </div>
         </div>
     </div>

@@ -14,6 +14,23 @@ session_start();
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
+<style>
+    .videoofservprovider{
+        width: 10vw;
+    }
+    @media screen and (max-width: 1055px) {
+        .videoofservprovider{
+            width: 20vw;
+        }
+    }
+
+    @media screen and (max-width: 610px) {
+        .videoofservprovider{
+            width: 30vw;
+        }
+    }
+</style>
+
 <body>
     <?php
   include 'includes/header_menu.php';
@@ -36,7 +53,7 @@ session_start();
                     </div>
                 </div>
                 <div class='my-4 m-0 d-flex justify-content-center'>
-                    <video src='./video/InvestmentAdvisorAnjaliKulkarni.mp4' style="width: 10vw" autoPlay loop muted></video>
+                    <video src='./video/InvestmentAdvisorAnjaliKulkarni.mp4' class="videoofservprovider" autoPlay loop muted></video>
                 </div>
             </div>
         </div>

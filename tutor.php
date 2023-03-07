@@ -13,7 +13,22 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+<style>
+    .videoofservprovider{
+        width: 10vw;
+    }
+    @media screen and (max-width: 1055px) {
+        .videoofservprovider{
+            width: 20vw;
+        }
+    }
 
+    @media screen and (max-width: 610px) {
+        .videoofservprovider{
+            width: 30vw;
+        }
+    }
+</style>
 <body>
     <?php
   include 'includes/header_menu.php';
@@ -38,7 +53,7 @@ session_start();
                 </div>
                 <div class='my-4 m-0 d-flex justify-content-center'>
                     <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
-                    <img src="./images/tutor.jfif" style="width: 15vw" alt="">
+                    <img src="./images/tutor.jfif" class="videoofservprovider" alt="">
                 </div>
             </div>
         </div>
@@ -59,8 +74,7 @@ session_start();
                     </div>
                 </div>
                 <div class='my-4 m-0 d-flex justify-content-center'>
-                    <!-- <video src='./video/dance1.mp4' style="width: 10vw" autoPlay loop muted></video> -->
-                    <img src="./images/Tutorphoto.jpg" style="width: 15vw" alt="">
+                    <img src="./images/Tutorphoto.jpg" class="videoofservprovider" alt="">
                 </div>
             </div>
         </div>

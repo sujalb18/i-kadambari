@@ -12,71 +12,121 @@ if (!isset($_SESSION['email'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <title>Planet Shopify | Online Shopping Site for Men</title> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
+<style>
+    .cartcontainer {
+        width: 70%;
+        margin: 20px;
+        background-color: white;
+        padding: 15px;
+    }
+
+    .proceedtobuycontainer {
+        width: 25%;
+        margin: 20px;
+        background-color: white;
+        padding: 15px;
+        height: 200px;
+
+    }
+
+    body {
+        background-color: #FDEBED;
+    }
+
+    .quantitybtn {
+        border: none;
+        border-radius: 5px;
+        padding:5px;
+        box-shadow: 2px 2px 2px 1px rgba(0.2, 0.2, 0.2, 0.2);
+    }
+
+    @media screen and (max-width: 1140px) {
+        .maincartcontainer{
+            flex-direction: column;
+        }
+
+        .productcart{
+            flex-direction: column;
+        }
+
+        .productdescription{
+            margin-top: 20px;
+        }
+
+        .productprice{
+            margin: 30px 10px;
+        }
+    }
+</style>
+
 <body style='height = 100vh'>
+
+
     <?php
     include 'includes/header_menu.php';
     ?>
-    <div class="d-flex justify-content-center">
-        <div class=" col-md-6  my-5 table-responsive p-5">
-            <table class="table table-striped table-bordered table-hover ">
+    <div class="maincartcontainer d-flex">
+        <div class="cartcontainer">
+            <h3>Shopping Cart</h3>
+            <hr noshade="noshade">
+            <?php
+            $price = 0;
+            $user_id = $_SESSION['user_id'];
+
+            $query = "SELECT products.price AS Price, products.id AS id, products.image as image, products.name AS Name FROM users_products JOIN products ON users_products.item_id = products.id WHERE users_products.user_id='$user_id' and status='Added To Cart'";
+
+            $result = mysqli_query($con, $query);
+            if (mysqli_num_rows($result) >= 1) {
+                ?>
                 <?php
-                $price = 0;
-                $user_id = $_SESSION['user_id'];
+                while ($row = mysqli_fetch_array($result)) {
 
-                $query = " SELECT products.price AS Price, products.id, products.image as image, products.name AS Name FROM users_products JOIN products ON users_products.item_id = products.id WHERE users_products.user_id='$user_id' and status='Added To Cart'";
-
-                $result = mysqli_query($con, $query);
-                if (mysqli_num_rows($result) >= 1) {
-                    ?>
-                    <?php
-                    while ($row = mysqli_fetch_array($result)) {
-
-                        $price += $row["Price"];
-                        $name = $row["Name"];
-                        $image = $row["image"];
-                        $sum = 1;
-
-
-                        echo "<div class='items-body'>
-                        
-                            
-                            <div class='row cart-item my-3'>
-                            <div class='col-md-3'>
-                                <img class='img-fluid' src='./images/products/$image'/ width='200px' height='100px'>
-                            </div>
-                                <div class='col-md-3 col-sm-3 col-xs-3 col-3' style='padding:2%'>
-                                    <h5 class='text-style-1'>$name</h5>
-                                    <p class='text-style-2'>Rs.$price</p>
-                                    <div class='wrapper'>
-                                   
-                                 </div>
+                    $price += $row["Price"];
+                    $name = $row["Name"];
+                    $image = $row["image"];
                     
-                                </div>
-            
-                                <div class='col-md-2 col-sm-3 col-xs-3 col-3' style='padding:2%'>
-                                    <h5 class='text-style-2'>Total</h5>
-                                    <p class='text-style-4'>Rs $price</p>
-                                </div>
-                            </div>
+                
+                ?>
+
+                <div class="productcart d-flex w-100 my-3">
+                    <div class='productimage mx-2 w-25'>
+                        <img src="./images/products/<?php echo $image ?>" width="200px" height='150px'>
+                    </div>
+                    <div class='productdescription mx-2 w-50'>
+                        <h5>
+                            <?php echo $name ?>
+                        </h5>
+                        <p style="font-size:0.9rem">In Stock</p>
+                        <button class="dropdown-toggle quantitybtn" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qty: 1</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">2</a>
+                            <a class="dropdown-item" href="#">3</a>
+                            <a class="dropdown-item" href="#">4</a>
+                            <a class="dropdown-item" href="#">5</a>
+                            <a class="dropdown-item" href="#">6</a>
+                            <a class="dropdown-item" href="#">7</a>
+                            <a class="dropdown-item" href="#">8</a>
+                            <a class="dropdown-item" href="#">9</a>
+                            <a class="dropdown-item" href="#">10+</a>
                         </div>
-                        <div class='py-4'>
-                            <div>
-                                <a href='appointment_page.php'>
-                                <button class='btn btn-danger custom-btn' type='button'>Confirm Order</button>
-                                </a>
-                            </div>
-                        </div>";
-                    }
-                    ?>
-                    </tbody>
-                    <?php
-                } else {
-                    echo "<div class='d-flex flex-column' style='align-items:center'> 
+                        <a href="cart-remove.php?id=<?php echo $row['id'] ?>" class='mx-3'>Delete</a>
+                    </div>
+                    <div class='productprice w-25'>
+                        <b style="font-size:20px">Price: ₹<?php echo $price ?></b>
+                    </div>
+                </div>
+                <hr noshade="noshade">
+                <?php
+                }
+                ?>
+                <?php
+            } else {
+                echo "<div class='d-flex flex-column' style='align-items:center'> 
                                 <img src='./images/nothingcart.png' height='150' width='150'>
                                 <h2 style='margin-top:40px'> Add items to the cart first!</h2>
                           </div>
@@ -87,11 +137,19 @@ if (!isset($_SESSION['email'])) {
                                 </a>
                             </div>
                         </div>";
-                }
-                ?>
+            }
+            
+            ?>
+        </div>
 
-                </tbody>
-            </table>
+        <div class='proceedtobuycontainer'>
+            <div class="d-flex">
+            <img src="./images/green-checkmark-icon.png" class="mx-1" width="30px" height="30px" alt="">
+            <p style='color:#067D62'>Your order is eligible for FREE Delivery. Select this option at checkout.</p>
+            </div>
+
+            <p><b style="font-size:20px">Total Price: <?php echo $price ?></b></p>
+            <a href="appointment_page.php"><button type='button' class="btn btn-danger">Proceed to Checkout</button></a>
         </div>
 
     </div>

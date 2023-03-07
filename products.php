@@ -122,7 +122,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-2">
                 <div class="card">
-                    <img src="images/products/Handpainted3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 290px">
+                    <img src="images/products/Handpainted3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Hand Painted Wall Arts</h6>
                         <h6>Price : Rs 500</h6>
@@ -318,7 +318,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/products/art5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 290px">
+                    <img src="images/products/art5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Decorative Art Carry Bag</h6>
                         <h6>Price : Rs 200</h6>
@@ -368,7 +368,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/products/art7.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 290px">
+                    <img src="images/products/art7.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Decorative Bottle Art</h6>
                         <h6>Price : Rs 450</h6>
@@ -392,7 +392,7 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/products/art8.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 290px">
+                    <img src="images/products/art8.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
                         <h6>Canvas Painting</h6>
                         <h6>Price : Rs 400</h6>

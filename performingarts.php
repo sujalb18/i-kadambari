@@ -13,7 +13,27 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+<style>
+    .videoofservprovider{
+        width: 10vw;
+    }
+    .imageofservprovider{
+        width: 15vw;
+        height: 300px;
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 1055px) {
+        .videoofservprovider{
+            width: 20vw;
+        }
+    }
 
+    @media screen and (max-width: 610px) {
+        .videoofservprovider{
+            width: 30vw;
+        }
+    }
+</style>
 <body>
     <?php
   include 'includes/header_menu.php';
@@ -36,7 +56,7 @@ session_start();
                     </div>
                 </div>
                 <div class='m-0 afterservvideo'>
-                    <video src='./video/dance1.mp4' style="width: 10vw;margin-top:30px" autoPlay loop muted></video>
+                    <video src='./video/dance1.mp4' class="videoofservprovider" autoPlay loop muted></video>
                 </div>
             </div>
         </div>
@@ -56,7 +76,7 @@ session_start();
                     </div>
                 </div>
                 <div class='m-0 afterservvideo'>
-                    <img src="./images/Singer (2).jpeg" style="width:14vw" alt="">
+                    <img src="./images/Singer (2).jpeg" class="imageofservprovider" alt="">
                 </div>
             </div>
         </div>
