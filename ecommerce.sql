@@ -31,30 +31,29 @@ SET time_zone = "+00:00";
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `name` varchar(30) DEFAULT NULL,
-  `price` int(20) NOT NULL
+  `price` int(20) NOT NULL,
+  `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `products`
---
 
-INSERT INTO `products` (`id`, `name`, `price`) VALUES
-(1, 'Guess 1875', 3000),
-(2, 'Guest Watch', 2500),
-(3, 'Panerai Watch', 3500),
-(4, 'Nonos Watch', 1800),
-(5, 'Levis', 1800),
-(6, 'louis philippe t-shirt', 2500),
-(7, 'Highlander t-shirt', 500),
-(8, 'GUCCI White t-Shirt', 2300),
-(9, 'Nike White Sneaker', 8000),
-(10, 'Nike White Shoes', 7500),
-(11, 'Nike Yellow Sneaker', 7000),
-(12, 'Nike Brown Sneaker', 6000),
-(13, 'Beats Headphone', 22500),
-(14, 'Zolo Headphone', 4500),
-(15, 'Sony Speaker', 10500),
-(16, 'Airpods', 15000);
+
+INSERT INTO `products` (`id`, `name`, `price`, `image`) VALUES
+(1, "Krishna's Diary", 3000, "krishna diary.jpeg"),
+(2, "Hand Painted Wall Arts", 2500, "Handpainted1.jpeg"),
+(3, "Hand Painted Wall Arts", 3500, "Handpainted2.jpeg"),
+(4, "Hand Painted Wall Arts", 1800 , "Handpainted3.jpeg"),
+(5, "Hand Painted Wall Arts", 1800 , "Handpainted4.jpeg"),
+(6, "Hand Painted Wall Arts", 2500 , "Handpainted5.jpeg"),
+(7, "Hand Painted Wall Arts", 500 , "Handpainted6.jpeg"),
+(8, "Decorative Plates", 2300, "art1.jpeg"),
+(9, "Festive Decoration", 8000, "art2.jpeg"),
+(10, "Festive Arts(Modak)", 7500, "art3.jpeg"),
+(11, "Festive Arts(Modak)", 7000, "art4.jpeg"),
+(12, "Decorative Art Carry Bag", 6000, "art5.jpeg"),
+(13, "Canvas Painting", 22500, "art6.jpeg"),
+(14, "Decorative Bottle Art", 4500, "art7.jpeg"),
+(15, "Canvas Painting", 10500, "art8.jpeg"),
+(16, "Embroided Decoration", 15000, "art9.jpeg");
 
 -- --------------------------------------------------------
 
