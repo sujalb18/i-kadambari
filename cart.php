@@ -77,19 +77,22 @@ if (!isset($_SESSION['email'])) {
             $price = 0;
             $user_id = $_SESSION['user_id'];
 
-            $query = "SELECT products.price AS Price, products.id AS id, products.image as image, products.name AS Name FROM users_products JOIN products ON users_products.item_id = products.id WHERE users_products.user_id='$user_id' and status='Added To Cart'";
-
+            
+            $query = "SELECT quantity AS quantity, products.price AS Price, products.id AS id, products.image as image, products.name AS Name FROM users_products JOIN products ON users_products.item_id = products.id WHERE users_products.user_id='$user_id' and status='Added To Cart'";
+            $total = 0;
+            
+            
             $result = mysqli_query($con, $query);
             if (mysqli_num_rows($result) >= 1) {
                 ?>
                 <?php
                 while ($row = mysqli_fetch_array($result)) {
-
-                    $price += $row["Price"];
+                    
+                    $price = $row["Price"];
                     $name = $row["Name"];
                     $image = $row["image"];
+                    $quantity = $row['quantity'];
                     
-                
                 ?>
 
                 <div class="productcart d-flex w-100 my-3">
@@ -102,25 +105,31 @@ if (!isset($_SESSION['email'])) {
                         </h5>
                         <p style="font-size:0.9rem">In Stock</p>
                         <button class="dropdown-toggle quantitybtn" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qty: 1</button>
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qty: <?php echo $row['quantity']?></button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">2</a>
-                            <a class="dropdown-item" href="#">3</a>
-                            <a class="dropdown-item" href="#">4</a>
-                            <a class="dropdown-item" href="#">5</a>
-                            <a class="dropdown-item" href="#">6</a>
-                            <a class="dropdown-item" href="#">7</a>
-                            <a class="dropdown-item" href="#">8</a>
-                            <a class="dropdown-item" href="#">9</a>
-                            <a class="dropdown-item" href="#">10+</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 1?>">1</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 2?>">2</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 3?>">3</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 4?>">4</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 5?>">5</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 6?>">6</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 7?>">7</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 8?>">8</a>
+                            <a class="dropdown-item" href="updatevalue.php?id=<?php echo $row['id']?>&quantity=<?php echo 9?>">9</a>
                         </div>
-                        <a href="cart-remove.php?id=<?php echo $row['id'] ?>" class='mx-3'>Delete</a>
+                        <?php
+                            $price *= $quantity; 
+                            $total += $price;
+                        ?>
+                        
+                        <a href="cart-remove.php?id=<?php echo $row['id']?>" class='mx-3'>Delete</a>
                     </div>
                     <div class='productprice w-25'>
                         <b style="font-size:20px">Price: ₹<?php echo $price ?></b>
                     </div>
                 </div>
                 <hr noshade="noshade">
+                
                 <?php
                 }
                 ?>
@@ -140,20 +149,20 @@ if (!isset($_SESSION['email'])) {
             }
             
             ?>
+        
         </div>
+
 
         <div class='proceedtobuycontainer'>
-            <div class="d-flex">
-            <img src="./images/green-checkmark-icon.png" class="mx-1" width="30px" height="30px" alt="">
-            <p style='color:#067D62'>Your order is eligible for FREE Delivery. Select this option at checkout.</p>
-            </div>
-
-            <p><b style="font-size:20px">Total Price: <?php echo $price ?></b></p>
-            <a href="appointment_page.php"><button type='button' class="btn btn-danger">Proceed to Checkout</button></a>
-        </div>
-
+                    <div class="d-flex">
+                    <img src="./images/green-checkmark-icon.png" class="mx-1" width="30px" height="30px" alt="">
+                    <p style='color:#067D62'>Your order is eligible for FREE Delivery. Select this option at checkout.</p>
+                    </div>
+        
+                    <p><b style="font-size:20px">Total Price: <?php echo $total ?></b></p>
+                    <a href="appointment_page.php"><button type='button' class="btn btn-danger">Proceed to Checkout</button></a>
+                </div>
     </div>
-
 
     </div>
     <!--footer -->
@@ -174,6 +183,8 @@ if (!isset($_SESSION['email'])) {
         }
     });
 </script>
+
+
 <?php if (isset($_GET['error'])) {
     $z = $_GET['error'];
     echo "<script type='text/javascript'>
