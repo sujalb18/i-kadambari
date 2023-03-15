@@ -26,79 +26,23 @@
         while ($row = mysqli_fetch_array($result)) {
             ?>
             <div class="loginheading">
-                <h4 style='margin-bottom:30px'>Login & Security</h4>
+                <h4 style='margin-bottom:30px'>Change Your Email</h4>
             </div>
-            <div class="loginsecuritycont">
-                <div class="thecont">
-                    <div>
-                        <h6>Name:</h6>
-                        <p>
-                            <?php echo $row['first_name'] . " " . $row['last_name'] ?>
-                        </p>
+            <div class="editname">
+                <form action="editmail_script.php" method="post">
+                    <p>If you want to change the email associated with your Amazon customer account, you may do so below. Be sure to click the  <b>Save Changes</b> button when you are done.</p>
+                    <p><b>New email</b></p>
+                    <input type="text" id="newemail" name="newemail" style="width:100%;height:40px;padding:10px" value="<?php echo $row['email_id']?>">
+                    <div class='savechanges'>
+                        <button class="btn btn-danger">Save Changes</button>
                     </div>
-
-                    <div>
-                        <a href="editname.php">
-                            <button>Edit</button>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-                <div class="thecont">
-                    <div>
-                        <h6>Email:</h6>
-                        <p>
-                            <?php echo $row['email_id'] ?>
-                        </p>
-                    </div>
-
-                    <div>
-                        <a href="editmail.php">
-                            <button>Edit</button>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-                <div class="thecont">
-                    <div>
-                        <h6>Primary Phone Number:</h6>
-                        <p><?php echo $row['PhoneNumber'] ?></p>
-                    </div>
-
-                    <div>
-                        <a href="editname">
-                            <button>Edit</button>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-                <div class="thecont">
-                    <div>
-                        <h6>Password:</h6>
-                        <p><?php echo $row['password'] ?></p>
-                    </div>
-
-                    <div>
-                        <a href="editname">
-                            <button>Edit</button>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-            </div>
-
-            <div class="loginheading">
-                <form action='logout_script.php'>
-                    <button class='btn btn-danger'>Logout</button>
                 </form>
-            </div>
-
+            </div>    
             <?php
         }
     }
     ?>
-
-    <?php include 'includes/footer.php' ?>
+<?php include 'includes/footer.php' ?>
 </body>
 
 </html>

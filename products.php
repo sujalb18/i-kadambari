@@ -48,242 +48,33 @@ session_start();
         <hr />
         <!--menu list-->
         <div class="row text-center" id="watch">
-            <div class="col-md-3 col-6 py-2">
-                <div class="card">
-                    <img src="images/products/krishna diary.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Krishna's Diary</h6>
-                        <h6>Price : Rs 300</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(1)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75  text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=1" name="add" value="add" class="btn btn-danger w-75 text-white">Add to cart</a>
-                                <p>
-                                <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-2">
-                <div class="card">
-                    <img src="images/products/Handpainted1.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price : Rs 500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(2)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=2" name="add" value="add" class="btn btn-danger w-75 text-white">Add to
-                                        cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-2">
-                <div class="card">
-                    <img src="images/products/handpainted2.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price : Rs 500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(3)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=3" name="add" value="add" class="btn btn-danger w-75 text-white">Add to
-                                        cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-2">
-                <div class="card">
-                    <img src="images/products/Handpainted3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price : Rs 500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(4)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                </p><a href="cart-add.php?id=4" name="add" value="add" class="btn btn-danger w-75 text-white">Add
-                                    to cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center" id="shirt">
+
+
+            <!-- Mycode -->
+            <?php
+            require ("includes/common.php");
+            $query = "SELECT * FROM `products`";
+            $result = mysqli_query($con, $query);
+
+            if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_array($result)) {
+             ?>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/products/Handpainted4.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
+                    <img src="images/products/<?php echo $row['image'] ?>" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
-                        <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price : Rs 500</h6>
+                        <h6><?php echo $row['name'] ?></h6>
+                        <h6>Price : <?php echo $row['price'] ?></h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
                             </p>
                         <?php
                         } else {
-                            if (check_if_added_to_cart(5)) {
+                            if (check_if_added_to_cart($row['id'] )) {
                                 echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
                             } else {
                                 ?>
-                                <p><a href="cart-add.php?id=5" name="add" value="add" class="btn btn-danger w-75 text-white">Add to
-                                        cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/Handpainted5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price : Rs 500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(6)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=6" name="add" value="add" class="btn btn-danger w-75 text-white">Add to
-                                        cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/Handpainted6.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Hand Painted Wall Arts</h6>
-                        <h6>Price : Rs 500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(7)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=7" name="add" value="add" class="btn btn-danger w-75 text-white">Add to
-                                        cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art1.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Decorative Plates</h6>
-                        <h6>Price : Rs 250</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(8)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=8" name="add" value="add" class="btn btn-danger w-75 text-white">Add to
-                                        cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center" id="shoes">
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art2.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Festive Decoration</h6>
-                        <h6>Price : Rs 160</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(9)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=9" name="add" value="add" class="btn btn-danger w-75 text-white">Add to
-                                        cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art3.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Festive Arts(Modaks)</h6>
-                        <h6>Price : Rs 200(50rs per piece)</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(10)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=10" name="add" value="add" class="btn btn-danger w-75 text-white">Add
+                                <p> <a href="cart-add.php?id=<?php echo $row['id'] ?>" name="add" value="add" class="btn btn-danger w-75 text-white">Add
                                         to cart</a></p>
                             <?php
                             }
@@ -292,152 +83,10 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art4.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Festive Arts(Modaks)</h6>
-                        <h6>Price : Rs 60</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
                         <?php
-                        } else {
-                            if (check_if_added_to_cart(11)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p><a href="cart-add.php?id=11" name="add" value="add" class="btn btn-danger w-75 text-white">Add
-                                        to cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art5.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Decorative Art Carry Bag</h6>
-                        <h6>Price : Rs 200</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(12)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                </p><a href="cart-add.php?id=12" name="add" value="add" class="btn btn-danger w-75 text-white">Add
-                                    to cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center" id="headphones">
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art6.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Canvas Painting</h6>
-                        <h6>Price : Rs 400</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(13)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p> <a href="cart-add.php?id=13" name="add" value="add" class="btn btn-danger w-75 text-white">Add
-                                        to cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art7.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Decorative Bottle Art</h6>
-                        <h6>Price : Rs 450</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(14)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                </p><a href="cart-add.php?id=14" name="add" value="add" class="btn btn-danger w-75 text-white">Add
-                                    to cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art8.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Canvas Painting</h6>
-                        <h6>Price : Rs 400</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(15)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                </p><a href="cart-add.php?id=15" name="add" value="add" class="btn btn-danger w-75 text-white">Add
-                                    to cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/products/art9.jpeg" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
-                    <div class="figure-caption">
-                        <h6>Embroided Decoration</h6>
-                        <h6>Price : Rs 250</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-danger w-75 text-white ">Add To Cart</a>
-                            </p>
-                        <?php
-                        } else {
-                            if (check_if_added_to_cart(16)) {
-                                echo '<p><a href="#" class="btn btn-danger w-75 text-white" disabled>Added to cart</a></p>';
-                            } else {
-                                ?>
-                                <p> <a href="cart-add.php?id=16" name="add" value="add" class="btn btn-danger w-75 text-white">Add
-                                        to cart</a></p>
-                            <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
+        }
+    }
+    ?>
         </div>
     </div>
     <!--menu list ends-->

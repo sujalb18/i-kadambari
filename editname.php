@@ -29,7 +29,7 @@
                 <h4 style='margin-bottom:30px'>Change Your Name</h4>
             </div>
             <div class="editname">
-                <form action="edit_script.php" method="post">
+                <form action="edit_namescript.php" method="post">
                     <p>If you want to change the name associated with your Amazon customer account, you may do so below. Be sure to click the  <b>Save Changes</b> button when you are done.</p>
                     <p><b>New Name</b></p>
                     <input type="text" id="newfname" name="newfname" value="<?php echo $row['first_name']?>">

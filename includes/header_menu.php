@@ -73,8 +73,8 @@ session_start();
                             echo 
                             "<ul class='nav navbar-nav d-flex'>
                             <a href='accountprofile.php' class='nav-link' style='padding-right:0'>
-                            <i class='fa-sharp fa-solid fa-user navicon' style='color:white;'></i><li class='nav-item'>
-                            $row[first_name]</a></li>
+                            <i class='fa-sharp fa-solid fa-user navicon' style='color:rgba(255,255,255,.55);'></i><li class='nav-item'>
+                            $row[first_name]  $row[last_name]</a></li>
                         </ul>";
                         }
                     }
