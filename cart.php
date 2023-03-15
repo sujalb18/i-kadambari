@@ -13,7 +13,7 @@ if (!isset($_SESSION['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <style>
@@ -21,6 +21,8 @@ if (!isset($_SESSION['email'])) {
         width: 70%;
         margin: 20px;
         background-color: white;
+        display: flex;
+        flex-direction: column;
         padding: 15px;
     }
 
@@ -31,6 +33,17 @@ if (!isset($_SESSION['email'])) {
         padding: 15px;
         height: 200px;
 
+    }
+
+    .productdescription{
+        width: 50%;
+        margin: 0 20px; 
+    }
+    .productimage{
+        margin: 0 20px; 
+    }
+    .productprice{
+        width:25%;
     }
 
     body {
@@ -49,6 +62,9 @@ if (!isset($_SESSION['email'])) {
             flex-direction: column;
         }
 
+        .cartcontainer{
+            margin: 40px auto;
+        }
         .productcart{
             flex-direction: column;
         }
@@ -59,6 +75,31 @@ if (!isset($_SESSION['email'])) {
 
         .productprice{
             margin: 30px 10px;
+            
+        }
+
+        .proceedtobuycontainer{
+            width: 70%;
+            margin: 30px auto;
+        }
+
+        
+    }
+    @media screen and (max-width: 750px) {
+        .productprice{
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+        }
+        .productcart{
+            /* justify-content: center;
+            align-items: center; */
+            padding: 0px;
+        }
+
+        .productdescription{
+            width: 100%;
+            margin: 10px 20px; 
         }
     }
 </style>
@@ -96,10 +137,10 @@ if (!isset($_SESSION['email'])) {
                 ?>
 
                 <div class="productcart d-flex w-100 my-3">
-                    <div class='productimage mx-2 w-25'>
+                    <div class='productimage'>
                         <img src="./images/products/<?php echo $image ?>" width="200px" height='150px'>
                     </div>
-                    <div class='productdescription mx-2 w-50'>
+                    <div class='productdescription'>
                         <h5>
                             <?php echo $name ?>
                         </h5>
@@ -124,7 +165,7 @@ if (!isset($_SESSION['email'])) {
                         
                         <a href="cart-remove.php?id=<?php echo $row['id']?>" class='mx-3'>Delete</a>
                     </div>
-                    <div class='productprice w-25'>
+                    <div class='productprice'>
                         <b style="font-size:20px">Price: ₹<?php echo $price ?></b>
                     </div>
                 </div>

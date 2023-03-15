@@ -55,6 +55,8 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
                 </li>
+
+
                 <?php
         if (isset($_SESSION['email'])) {
           ?>
@@ -183,6 +185,7 @@ session_start();
                         </div>
                     </div>
 
+                    
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" required>
                         <label for="checkbox" class="form-check-label">Agree terms and Condition</label>

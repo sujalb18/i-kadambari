@@ -471,6 +471,12 @@
     }
   }
 
+
+  @media screen and (max-width: 1133px) {
+    .productcart{
+      margin: auto;
+    }
+  }
   @media screen and (max-width: 1120px) {
     .servicecontainer{
       width: 70%;
@@ -616,6 +622,16 @@
     display: flex;
     justify-content: space-between;
   }
+  
+  @media screen and (max-width: 1220px) {
+    .loginsecuritycont{
+      width: 80%;
+    }
+
+    .loginheading{
+      width: 80%;
+    }
+  }
 
   .thecont button{
     width: 120px;
@@ -631,6 +647,27 @@
   .loginheading button{
     margin-bottom: 100px;
   }
+
+
+  @media screen and (max-width: 630px) {
+    .thecont{
+      flex-direction: column;
+    }
+
+    .loginsecuritycont{
+      width: 100%;
+    }
+
+    .loginheading{
+      width: 100%;
+      padding-left: 10px;
+    }
+
+    .loginheading button{
+      width: 90%;
+    }
+  }
+
 
   .editname{
     width: 40%;

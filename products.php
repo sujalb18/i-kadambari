@@ -10,7 +10,6 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>i-kadambari</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     .jumbotron{
@@ -20,15 +19,33 @@ session_start();
     .goodfont{
         font-family: 'Montserrat', sans-serif;
     }
+
+    .maincard{
+        margin: 10px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .maincard{
+        margin: 30px;
+    }
+
+    @media screen and (max-width: 991px) {
+        .maincard{
+        margin: 30px 50px;
+    }
+
+    @media screen and (max-width: 770px) {
+        .maincard{
+        margin: 30px auto;
+        }
+    }
 </style>
 
 <body style="height: 100vh">
-    <!--header -->
     <?php
     include 'includes/header_menu.php';
     include 'includes/check-if-added.php';
     ?>
-    <!--header ends -->
 
     <div class="container" style="margin-top:65px">
         <!--jumbutron start-->
@@ -59,7 +76,7 @@ session_start();
             if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_array($result)) {
              ?>
-            <div class="col-md-3 col-6 py-3">
+            <div class=" maincard">
                 <div class="card">
                     <img src="images/products/<?php echo $row['image'] ?>" alt="" class="img-fluid pb-1" style="width: 253.33px; height: 298px">
                     <div class="figure-caption">
