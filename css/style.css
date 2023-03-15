@@ -598,3 +598,68 @@
     opacity: 0.5;
     transition: 0.6s;
   }
+
+  .loginsecuritycont{
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: auto;
+  }
+
+  .loginheading{
+    width: 40%;
+    margin: 30px auto 0 auto;
+  }
+
+  .thecont{
+    width: 100%;
+    padding: 20px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .thecont button{
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 34px;
+    margin-top: 10px;
+  }
+  .thecont button:hover{
+    background-color: rgb(255, 237, 237);
+  }
+
+  .loginheading button{
+    margin-bottom: 100px;
+  }
+
+  .editname{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px 40px 0 40px;
+    margin-bottom: 30px;
+  }
+
+  #newfname{
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+  }
+  #newlname{
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+  }
+
+  #newname:focus{
+   outline: none;
+   border: 3px solid yellow;
+   border-radius: 10px;
+  }
+
+  .savechanges{
+    margin: 30px 0;
+  }

@@ -1,5 +1,6 @@
 <!-- <?php
 session_start();
+
 ?> -->
 <style>
 .navcolor {
@@ -13,6 +14,9 @@ session_start();
 }
 
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
 
 <nav class="navbar navbar-expand-lg d-flex navbar-dark navcolor">
     <div class="container-fluid d-flex justify-content-between">
@@ -60,20 +64,28 @@ session_start();
         ?>
                 <?php
       if (isset($_SESSION['email'])) {
-        ?>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="logout_script.php" class="nav-link"><i
-                                class="fa fa-sign-out"></i>Logout</a></li>
-                    <li class="nav-item"><a class="nav-link " data-placement="bottom" data-toggle="popover"
-                            data-trigger="hover" data-content="<?php echo $_SESSION['email'] ?>"><i
-                                class="fa fa-user-circle "></i></a></li>
-                </ul>
+                 require("common.php");
+                    $query = "SELECT * FROM users where id = '$_SESSION[user_id]'";
+                    $result = mysqli_query($con, $query);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo 
+                            "<ul class='nav navbar-nav d-flex'>
+                            <a href='accountprofile.php' class='nav-link' style='padding-right:0'>
+                            <i class='fa-sharp fa-solid fa-user navicon' style='color:white;'></i><li class='nav-item'>
+                            $row[first_name]</a></li>
+                        </ul>";
+                        }
+                    }
+                ?>
+                
                 <?php
       } else {
         ?>
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="#signup" class="nav-link" data-toggle="modal"><i
-                                class="fa fa-user"></i>Sign up</a></li>
+                                class="fa fa-user mx-1"></i>Sign up</a></li>
                     <li class="nav-item "><a href="#login" class="nav-link" data-toggle="modal"><i
                                 class="fa fa-sign-in"></i>
                             Login</a></li>
